@@ -12,7 +12,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.login="0"
     let log = sessionStorage.getItem("login") as string;
-    console.log(log)
     this.login = log;
   }
 

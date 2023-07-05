@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DatabaseServiceService } from 'src/app/services/database-service.service';
+import { DatabaseService } from 'src/app/services/database.service';
+import { User } from '../../models/user.model';
+import { UserContextService } from 'src/app/services/userContext.service';
 
 
 @Component({
@@ -8,20 +10,24 @@ import { DatabaseServiceService } from 'src/app/services/database-service.servic
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
- 
 
-  constructor(private databaseService: DatabaseServiceService) { }
+  private googleUser: User
+
+  currentUser: User;
+
+  constructor(
+    private databaseService: DatabaseService,
+    private userContextService: UserContextService) {
+      this.currentUser.Email = userContextService.userContext.Email
+    }
 
   ngOnInit(): void {
-   this.databaseService.getUsers().subscribe(user => {
-    console.log(user)
-    user.forEach(elemnt => {
-      if("juanmah1998@gmail.com" == elemnt.Email){
-        console.log(elemnt)
-      }
-      
-    })
-   })
-  }
 
+    console.log(this.currentUser)
+
+    debugger
+    this.currentUser = this.databaseService.getUserByEmail(this.currentUser.Email)
+
+    console.log(this.currentUser)
+  }
 }
