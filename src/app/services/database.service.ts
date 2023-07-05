@@ -11,7 +11,6 @@ export class DatabaseService {
   constructor( private firestore: Firestore ) { }
 
   public getUserByEmail(email: string): User {
-    debugger
     var user: User = new User()
 
     this.getUsers()

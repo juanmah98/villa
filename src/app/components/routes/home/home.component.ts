@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from 'src/app/services/database.service';
 import { User } from '../../models/user.model';
-import { UserContextService } from 'src/app/services/userContext.service';
-
 
 @Component({
   selector: 'app-home',
@@ -10,19 +8,16 @@ import { UserContextService } from 'src/app/services/userContext.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  private googleUser: User
-
   currentUser: User;
+  googleEmail: string;
 
   constructor(
-    private databaseService: DatabaseService,
-    private userContextService: UserContextService) {
-      this.currentUser.Email = userContextService.userContext.Email
-    }
+    private databaseService: DatabaseService) { }
 
   ngOnInit(): void {
-    this.currentUser = this.databaseService.getUserByEmail(this.currentUser.Email)
+    this.googleEmail = sessionStorage.getItem('email')
+    this.currentUser = this.databaseService.getUserByEmail(this.googleEmail)
 
+    console.log(this.currentUser)
   }
 }
