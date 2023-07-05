@@ -22,12 +22,7 @@ export class HomeComponent implements OnInit {
     }
 
   ngOnInit(): void {
-
-    console.log(this.currentUser)
-
-    debugger
     this.currentUser = this.databaseService.getUserByEmail(this.currentUser.Email)
 
-    console.log(this.currentUser)
   }
 }
