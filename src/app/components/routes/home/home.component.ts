@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from 'src/app/services/database.service';
 import { User } from '../../models/user.model';
+import { HeaderComponent } from '../../layout/header/header.component'
 
 @Component({
   selector: 'app-home',

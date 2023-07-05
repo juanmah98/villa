@@ -1,0 +1,15 @@
+.header{
+  background-color: #000000 ;
+  height: 6rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+
+  &__title {
+    padding-top: 2rem;
+    padding-left: 5rem;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    color: aliceblue;
+  }
+}
