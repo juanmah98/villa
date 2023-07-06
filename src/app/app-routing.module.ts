@@ -4,8 +4,9 @@ import { HomeComponent } from './components/routes/home/home.component';
 import { InicioComponent } from './components/routes/inicio/inicio.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},  
-  {path: '', component: InicioComponent},  
+  {path: '', component: InicioComponent},
+  {path: 'loading', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
 
 ];
 

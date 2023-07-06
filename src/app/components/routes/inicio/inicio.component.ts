@@ -8,10 +8,8 @@ declare var google: any;
 })
 export class InicioComponent implements OnInit {
   googleUser: any
-  googleEmail: string = "asd";
 
   constructor() { }
-
 
   ngOnInit(): void {
     google.accounts.id.initialize({
@@ -38,8 +36,8 @@ export class InicioComponent implements OnInit {
       }).join(''));
 
     this.googleUser = JSON.parse(jsonPayload);
-    sessionStorage.setItem("email", this.googleUser.email);
+    localStorage.setItem("email", this.googleUser.email);
 
-    document.location.href = "/home"
+    document.location.href = "/loading"
   }
 }
