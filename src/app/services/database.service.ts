@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
-import { Observable, find, from, map, switchMap } from 'rxjs';
+import { Observable, find, from, map, switchMap, tap } from 'rxjs';
 import { User } from '../components/models/user.model';
 
 @Injectable({
@@ -10,24 +10,27 @@ export class DatabaseService {
 
   constructor( private firestore: Firestore ) { }
 
-  public getUserByEmail(email: string): User {
-    var user: User = new User()
+  public setUserContextByEmail(email: string): void {
+    var user: User
 
     this.getUsers()
       .pipe(
         switchMap((db) => from(db)),
-        find((dbUser) => dbUser.Email === email)
-      ).subscribe(dbUser => {
-        user.Email = dbUser.Email,
-        user.Name = dbUser.Name,
-        user.LastName = dbUser.LastName,
-        user.HasManaged = dbUser.HasManaged,
-        user.Medals = dbUser.Medals,
-        user.Type = dbUser.Type,
-        user.id = dbUser.id
-      })
+        find((dbUser) => dbUser.Email === email),
+        tap((userContext) => {
+            user = new User(
+              userContext.Email,
+              userContext.HasManaged,
+              userContext.LastName,
+              userContext.Medals,
+              userContext.Name,
+              userContext.Type,
+              userContext.id
+            )
 
-      return user
+            localStorage.setItem('user', JSON.stringify(user))
+        })
+      ).subscribe()
     }
 
     private getUsers(): Observable<User[]> {

@@ -9,15 +9,11 @@ import { User } from '../../models/user.model';
 })
 export class HomeComponent implements OnInit {
   currentUser: User;
-  googleEmail: string;
 
-  constructor(
-    private databaseService: DatabaseService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.googleEmail = sessionStorage.getItem('email')
-    this.currentUser = this.databaseService.getUserByEmail(this.googleEmail)
-
-    console.log(this.currentUser)
+    const storedUserString = localStorage.getItem("user");
+    this.currentUser = JSON.parse(storedUserString);
   }
 }

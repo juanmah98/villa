@@ -7,11 +7,17 @@ import { User } from '../../models/user.model';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  currentUser: User
+  fullName: string
+
+  private currentUser: User
 
   constructor() { }
 
   ngOnInit(): void {
+    const storedUserString = localStorage.getItem("user");
+    this.currentUser = JSON.parse(storedUserString);
+
+    this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
   }
 
 }
