@@ -20,14 +20,16 @@ export class DatabaseService {
         tap((userContext) => {
             user = new User(
               userContext.Email,
-              userContext.HasManaged,
-              userContext.LastName,
-              userContext.Medals,
+              '',
               userContext.Name,
+              userContext.LastName,
               userContext.Type,
+              userContext.HasManaged,
+              userContext.Medals,
               userContext.id
             )
 
+            user.setPicture(localStorage.getItem("profilePhoto"))
             localStorage.setItem('user', JSON.stringify(user))
         })
       ).subscribe()

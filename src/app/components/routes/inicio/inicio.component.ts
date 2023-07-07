@@ -37,6 +37,7 @@ export class InicioComponent implements OnInit {
 
     this.googleUser = JSON.parse(jsonPayload);
     localStorage.setItem("email", this.googleUser.email);
+    localStorage.setItem("profilePhoto", this.googleUser.picture)
 
     document.location.href = "/loading"
   }

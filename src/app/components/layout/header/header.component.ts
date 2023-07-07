@@ -8,6 +8,7 @@ import { User } from '../../models/user.model';
 })
 export class HeaderComponent implements OnInit {
   fullName: string
+  profilePicture: string;
 
   private currentUser: User
 
@@ -18,5 +19,6 @@ export class HeaderComponent implements OnInit {
     this.currentUser = JSON.parse(storedUserString);
 
     this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
+    this.profilePicture = this.currentUser.Picture
   }
 }

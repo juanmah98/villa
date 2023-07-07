@@ -1,37 +1,54 @@
-.header{
-  background-color: #000000 ;
+.header {
+  background-color: #000000;
   height: 6rem;
-  padding-top: 1.2rem;
-  padding-left: 5.5rem;
+  padding-top: 1.1rem;
+  padding-left: 1rem;
   display: flex;
-  flex-direction: column;
   border-bottom-left-radius: 1.25rem;
   border-bottom-right-radius: 1.25rem;
   line-height: 1;
 
-  &__subtitle-type {
-    font-family: 'montserrat';
-    color: rgb(179, 179, 179);
-    font-size: 10px;
-    padding-left: .5rem;
-    justify-content: left;
+  &__picture {
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    border-radius: 50%;
   }
 
-  &__title {
-    text-transform: uppercase;
-    font-family: 'spaceMono';
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    justify-content: left;
+  &__picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    width: 18rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+
+    &__subtitle-type {
+      font-family: "montserrat";
+      color: rgb(179, 179, 179);
+      font-size: 10px;
+      padding-left: 0.5rem;
+      justify-content: left;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-family: "spaceMono";
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      justify-content: left;
+
+      width: 18rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
 
       &.small {
         font-size: 20px;
-        padding-top: .25rem;
+        padding-top: 0.25rem;
       }
 
       &.medium {
@@ -39,3 +56,4 @@
       }
     }
   }
+}
