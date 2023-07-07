@@ -17,6 +17,7 @@
     border-radius: 50%;
     border: .25rem solid rgb(211, 179, 92);
     position: relative;
+    min-width: fit-content;
   }
 
   &__picture img {

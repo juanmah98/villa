@@ -1,43 +1,10 @@
 <app-header></app-header>
-<body class="container-fluid">
-    <div class="row pt-5">
-
-        <div class="col-12 text-center">
-            <h2>LOGO la villa 2023</h2>
-        </div>
-
-        <div class="col-12">
-
-            <div class="m-sm-5 m-1">
-                <p class="fw-bold fs-2">Orange House</p>
-                <p class="fs-5">Cv750, 03509 Finestrat España</p>
-            </div>
-
-            <div class="m-sm-5 m-1">
-                <p class=" fs-5">
-                Sexta edicion de la Villa. Donde por primera vez repetimos destino, 
-                fue la casa seleccionada para 2021, la segunda de España. En esta ocasión confiamos despertarnos de nuevo
-                con churros para todos y resaca para nadie.
-                </p>      
-               
-            </div>
-
-            <div class="m-sm-5 m-1 text-center">
-               
-            </div>
-
-        </div>
-
-        <div class="col-12 bg-black">
-            <div class="m-sm-5 m-1 d-flex">
-                <p class="fw-bold fs-1 bg-light p-2">Album de fotos</p>              
-            </div>
-
-            <div class="m-sm-5 m-1">
-                <button class="btn btn-light">FOTOS</button>      
-            </div>
-        </div>
-
-      
-    </div>
-</body>
+<div class="home">
+  <!-- Todo el bloque de informacion lo sacare a otro componente, lo mismo con la parte inferior y la parte de las medallas -->
+  <div class="information">
+    <div class="information__title">Orange House</div>
+    <div class="information__adress">Cv750, 03509 Finestrat España</div>
+    <div class="information__description">{{description}}</div>
+    <div class="information__button">Ver más</div>
+  </div>
+</div>
