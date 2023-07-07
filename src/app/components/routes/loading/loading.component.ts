@@ -12,7 +12,7 @@ export class LoadingComponent implements OnInit {
   googleEmail: string;
   currentUser: User
 
-  loadingMessage: string = "Sensitive content inside.";
+  loadingMessage: string = "Sensitive content inside";
 
   timmerMin: number = 3000
   timmerMax: number = 6000
@@ -35,9 +35,10 @@ export class LoadingComponent implements OnInit {
 
   private startAnimation() {
     const messages = [
+      "Sensitive content inside.",
       "Sensitive content inside..",
       "Sensitive content inside...",
-      "Sensitive content inside."
+      "Sensitive content inside"
     ];
 
     let index = 0;

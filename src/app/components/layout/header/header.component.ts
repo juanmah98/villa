@@ -7,8 +7,9 @@ import { User } from '../../models/user.model';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  fullName: string
   profilePicture: string;
+  type: string
+  fullName: string
 
   private currentUser: User
 
@@ -18,7 +19,8 @@ export class HeaderComponent implements OnInit {
     const storedUserString = localStorage.getItem("user");
     this.currentUser = JSON.parse(storedUserString);
 
-    this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
     this.profilePicture = this.currentUser.Picture
+    this.type = this.currentUser.Type
+    this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
   }
 }

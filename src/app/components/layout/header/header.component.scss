@@ -1,6 +1,6 @@
 .header {
   background-color: #000000;
-  height: 6rem;
+  height: 6.2rem;
   padding-top: 1.1rem;
   padding-left: 1rem;
   display: flex;
@@ -13,6 +13,7 @@
     height: 65px;
     overflow: hidden;
     border-radius: 50%;
+    border: .25rem solid rgb(211, 179, 92);
   }
 
   &__picture img {

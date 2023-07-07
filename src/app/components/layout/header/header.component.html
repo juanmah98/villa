@@ -3,8 +3,7 @@
     <img src={{profilePicture}}>
   </div>
   <div class="header__main">
-    <div class="header__main__subtitle-type"> Fundador </div>
-    <div class="header__main__title" [ngClass]="{'medium': fullName.length <= 20, 'small': fullName.length > 20}">
-      {{fullName}} </div>
+    <div class="header__main__subtitle-type"> {{type}} </div>
+    <div class="header__main__title" [ngClass]="{'medium': fullName.length <= 20, 'small': fullName.length > 20}"> {{fullName}} </div>
   </div>
 </div>
