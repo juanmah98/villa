@@ -23,5 +23,19 @@
     color: rgb(255, 255, 255);
     font-size: 30px;
     justify-content: left;
+
+    width: 18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+      &.small {
+        font-size: 20px;
+        padding-top: .25rem;
+      }
+
+      &.medium {
+        font-size: 30px;
+      }
+    }
   }
-}

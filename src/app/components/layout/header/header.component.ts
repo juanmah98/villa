@@ -19,5 +19,4 @@ export class HeaderComponent implements OnInit {
 
     this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
   }
-
 }
