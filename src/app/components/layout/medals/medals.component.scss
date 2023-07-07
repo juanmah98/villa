@@ -1,3 +1,29 @@
-.medals{
+.medals-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: .1rem;
+}
 
+.medals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  margin-right: 0.4rem;
+
+  &__image {
+    background-color: rgb(216, 186, 53);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__text {
+    font-family: "century";
+    color: rgb(179, 179, 179);
+    font-size: 10px;
+    margin-top: 0.2rem;
+  }
 }

@@ -19,3 +19,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'montserrat-bold', arial;
+  src: url('assets/fonts/Century-normal.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
