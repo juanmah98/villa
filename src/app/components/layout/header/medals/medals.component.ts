@@ -10,10 +10,11 @@ export class MedalsComponent implements OnInit {
   silverMedals: string = "0"
   bronzeMedals: string = "0"
   copperMedals: string = "0"
-  userGoldMedals: string = "3"
-  userSilverMedals: string = "1"
-  userBronzeMedals: string = "4"
-  userCoppernMedals: string = "5"
+
+  userGoldMedals: number = 3
+  userSilverMedals: number = 1
+  userBronzeMedals: number = 4
+  userCoppernMedals: number = 5
 
 
   ngOnInit(): void {
@@ -21,7 +22,7 @@ export class MedalsComponent implements OnInit {
     this.generateMedalsValues(this.userGoldMedals, this.userSilverMedals, this.userBronzeMedals, this.userCoppernMedals)
   }
 
-  private generateMedalsValues(gold: string, silver: string, bronze: string, copper: string) {
+  private generateMedalsValues(gold: number, silver: number, bronze: number, copper: number) {
 
       const numerosRomanos = [
         { valor: "0", romano: "0" },
