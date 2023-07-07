@@ -8,7 +8,7 @@
 }
 
 .loading-text {
-  font-family: 'montserrat-bold';
+  font-family: "montserrat-bold";
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 24px;
@@ -31,15 +31,25 @@
   100% {
     text-shadow: 0 0 0 rgba(255, 255, 255, 0.8);
   }
-
 }
 
 .warning {
-  font-family: 'montserrat';
+  font-family: "montserrat";
   color: rgb(255, 255, 255);
   font-size: 12px;
   text-transform: uppercase;
   text-shadow: 0 0 8px hsla(0, 0%, 100%, 1);
 
   margin-bottom: 1rem;
+}
+
+.overlay {
+  font-family: 'zasline';
+  color: white;
+  font-size: 22px;
+  opacity: 3%;
+
+  position: absolute;
+  overflow-wrap: anywhere;
+  z-index: 1;
 }

@@ -16,6 +16,7 @@ export class LoadingComponent implements OnInit {
 
   timmerMin: number = 3000
   timmerMax: number = 6000
+  backgroundText: string;
 
   constructor(
     private databaseService: DatabaseService,
@@ -23,6 +24,7 @@ export class LoadingComponent implements OnInit {
 
   ngOnInit(): void {
     this.startAnimation()
+    this.backgroundText = "LaVilla.".repeat(1000)
 
     this.googleEmail = localStorage.getItem('email')
     this.databaseService.setUserContextByEmail(this.googleEmail)

@@ -26,3 +26,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'zasline';
+  src: url('assets/fonts/Zasline-gxg6E.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
