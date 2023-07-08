@@ -8,9 +8,10 @@
 }
 
 .information {
+  margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-
+  margin-bottom: 1rem;
   &__title {
     font-family: "montserrat-bold";
     font-size: 22px;
@@ -34,5 +35,40 @@
 
     margin-top: 1.5rem;
     line-height: 1.5;
+  }
+}
+
+.album {
+  
+  background-color: black;
+
+  &__margin {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  &__title {
+    margin-top: 2rem;
+    font-family: "montserrat-bold";
+    font-size: 32px;
+    width: 18rem;
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+    background-color: white;
+  }  
+
+  &__button-photos {
+    width: 50rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+  }
+
+  &__button-photos-size {
+    width: 10rem;
   }
 }
