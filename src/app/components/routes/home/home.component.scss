@@ -58,17 +58,69 @@
     background-color: white;
   }  
 
+
   &__button-photos {
-    width: 50rem;
-    padding: 1rem;
+    
+    width: 80%;
+    padding: 0.5rem;
     border-radius: 5px;
     background-color: white;
-    display: flex;
     margin-top: 1.5rem;
-    line-height: 1.5;
+   
   }
 
   &__button-photos-size {
-    width: 10rem;
+    width: 8rem;
+    margin: 5px;
   }
+
+  &__encuesta {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__encuesta-info {
+    order: 1;
+  }
+
+  &__encuesta-titel {
+    font-family: "montserrat-bold";
+    font-size: 22px;
+    color: white;
+    
+  }
+  &__encuesta-text {
+    font-family: "montserrat";
+    font-size: 14px;
+    color: white;
+    width: 80%;
+  }
+
+  &__encuesta-button-arrow {
+    order: 2;
+    display: flex;   
+    
+    
+  }
+
+  &__playlist {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__playlist-titel {
+    font-family: "montserrat-bold";
+    font-size: 22px;
+    color: white;
+    
+  }
+   
+  &__playlist-button-arrow {
+    order: 2;
+    display: flex;   
+    
+    
+  }
+
 }
