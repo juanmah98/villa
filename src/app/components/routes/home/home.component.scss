@@ -46,14 +46,15 @@
   }
 }
 
-.album {
+.lower-section{
   padding-left: 2rem;
   padding-right: 2rem;
 
   background-color: black;
   height: 30rem;
+}
 
-
+.album {
   &__title {
     font-family: "montserrat-bold";
     color: black;
@@ -86,12 +87,6 @@
 }
 
 .buttons {
-  padding-left: 2rem;
-  padding-right: 2rem;
-
-  background-color: black;
-  height: 30rem;
-
   &__button {
     margin-top: 1.5rem;
     display: flex;
