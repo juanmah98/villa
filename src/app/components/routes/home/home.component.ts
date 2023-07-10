@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   currentUser: User;
   description: string;
   encuesta: string;
+  playlist: string;
 
   constructor() { }
 
@@ -18,8 +19,11 @@ export class HomeComponent implements OnInit {
     const storedUserString = localStorage.getItem("user");
     this.currentUser = JSON.parse(storedUserString);
 
+
+    //Esto quizas lo podemos pasar a la base de datos, asi tenemos capacidad de modificar estos valores sin tener que volver a montar la app, ya que en cada inicio accederia a los valores de firebase
     this.description = "Sexta edicion de la Villa. Donde por primera vez repetimos destino, fue la casa seleccionada para 2021, la segunda de España. En esta ocasión confiamos despertarnos de nuevo con churros para todos y resaca para nadie."
     this.encuesta = "¿Dónde cenamos? ¿Qué día nos disfrazamos? ¿Cuál es la tematica de este año? ¿Alguna sugerencia?"
-  
+    this.playlist = "¿Quieres escuchar una lista que ha sonado y no te acuerdas de cual es? Seguramente este aquí."
+
   }
 }
