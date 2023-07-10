@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   profilePicture: string;
   type: string
   fullName: string
+  isVerified: boolean;
 
   private currentUser: User
 
@@ -22,5 +23,6 @@ export class HeaderComponent implements OnInit {
     this.profilePicture = this.currentUser.Picture
     this.type = this.currentUser.Type
     this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
+    this.isVerified = this.currentUser.HasManaged //Si quieres verlo cambia el valor en la base de datos o niega el valor de esta variable
   }
 }

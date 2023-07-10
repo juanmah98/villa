@@ -5,7 +5,7 @@ export class User {
   Name: string = ''
   LastName: string = ''
   Type: string = ''
-  HasManaged: string = ''
+  HasManaged: boolean = false
   Medals: string[] = []
   id: string = ''
 
@@ -15,7 +15,7 @@ export class User {
     name?: string,
     lastName?: string,
     type?: string,
-    hasManaged?: string,
+    hasManaged?: boolean,
     medals?: string[],
     id?: string) {
       this.Email = email
