@@ -117,13 +117,15 @@
     background-color: rgb(250, 250, 248);
     border-radius: 50%;
     width: 25px;
+    min-width: 25px;
     height: 25px;
+    min-height: 25px;
     overflow: hidden;
   }
 }
 
 .logout{
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
