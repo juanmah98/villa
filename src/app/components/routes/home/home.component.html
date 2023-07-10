@@ -1,23 +1,27 @@
 <app-header></app-header>
 <div class="home">
+
+  <app-medals-collection></app-medals-collection>
+
   <!-- Todo el bloque de informacion lo sacare a otro componente, lo mismo con la parte inferior y la parte de las medallas -->
   <div class="information">
     <div class="information__title">Orange House</div>
     <div class="information__adress">Cv750, 03509 Finestrat España</div>
     <div class="information__description">{{description}}</div>
-    <div class="information__button">Ver más</div>
+    <div class="information__container">
+      <div class="information__container__button">
+        Ver más
+      </div>
+    </div>
   </div>
 
 
   <div class="lower-section">
     <div class="album__title">Album de fotos</div>
     <div class="album__photos">
-      <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto1.jpg"
-        alt="">
-      <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto2.jpg"
-        alt="">
-      <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto3.jpg"
-        alt="">
+      <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto1.jpg" alt="">
+      <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto2.jpg" alt="">
+      <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto3.jpg" alt="">
     </div>
 
     <div class="buttons__button">

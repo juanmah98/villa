@@ -4,11 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoadingComponent } from './loading/loading.component';
 import { LayoutModule } from "../layout/layout.module";
-import { HeaderComponent } from '../layout/header/header.component';
+import { MedalsCollectionComponent } from './home/medals-collection/medals-collection.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
+        MedalsCollectionComponent,
         InicioComponent,
         LoadingComponent
     ],

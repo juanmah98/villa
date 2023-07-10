@@ -11,8 +11,8 @@ export class MedalsComponent implements OnInit {
   bronzeMedals: string = "0"
   copperMedals: string = "0"
 
-  userGoldMedals: number = 3
-  userSilverMedals: number = 1
+  userGoldMedals: number = 1
+  userSilverMedals: number = 2
   userBronzeMedals: number = 4
   userCoppernMedals: number = 5
 
