@@ -12,33 +12,36 @@
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
+
   &__title {
     font-family: "montserrat-bold";
-    font-size: 22px;
+    font-size: 18px;
   }
 
   &__adress {
     font-family: "montserrat";
-    font-size: 12px;
+    font-size: 8px;
+    margin-left: .25rem;
   }
 
   &__description {
     font-family: "montserrat";
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 0.9rem;
 
     margin-top: 1rem;
   }
 
   &__button {
     font-family: "montserrat";
-    font-size: 16px;
+    font-size: 10px;
 
     display: flex;
     justify-content: center;
 
     margin-top: 1.5rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     line-height: 1.5;
 
     background-color: rgb(216, 216, 216);
@@ -99,13 +102,14 @@
 
   &__title {
     font-family: "montserrat-bold";
-    font-size: 22px;
+    font-size: 25px;
     color: white;
   }
   &__text {
     font-family: "montserrat";
     font-size: 10px;
     color: white;
+    line-height: 0.8rem;
 
     padding-right: 2rem;
   }
