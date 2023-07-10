@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { DatabaseService } from 'src/app/services/database.service';
 import { User } from '../../models/user.model';
 
@@ -28,5 +28,9 @@ export class HomeComponent implements OnInit {
     this.playlist = "¿Quieres escuchar una lista que ha sonado y no te acuerdas de cual es? Seguramente este aquí."
     this.encuesta = "¿Dónde cenamos? ¿Qué día nos disfrazamos? ¿Cuál es la tematica de este año? ¿Alguna sugerencia?"
 
+  }
+
+  onLoguut(): void {
+    console.log("Javi: No se cual es la configuracion de la API de google para cerrar sesión, pero vaya que eso deberia hacerse aqui")
   }
 }
