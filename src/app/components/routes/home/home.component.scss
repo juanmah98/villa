@@ -1,3 +1,17 @@
+.blackLayer {
+  background-color: black;
+  width: 101vw;
+  height: 101vh;
+
+  opacity: 0;
+  transition: opacity 2s;
+  transition-timing-function: ease-in;
+
+  position: fixed;
+  z-index: 5;
+  padding: 0;
+}
+
 .home {
   z-index: -1;
   display: flex;
@@ -6,7 +20,7 @@
   width: 100%;
 
   translate: 0 8rem;
-  scroll-behavior: smooth; //Hay que ver la manera de poder poner una posicion de la pagina en concreto al cargarla por primera vez para que no se vean las medallas
+  scroll-behavior: smooth;
 }
 
 .information {
