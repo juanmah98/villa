@@ -13,7 +13,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   encuesta: string;
   playlist: string;
   tricuount: string;
+
   blackOverlayVisible: boolean = true
+  isLowerThan3: boolean = true
 
   constructor() { }
 
@@ -28,6 +30,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.tricuount = "Apunta y consulta cuanto dinero debes y te deben de manera fácil y rápida"
     this.playlist = "¿Quieres escuchar una lista que ha sonado y no te acuerdas de cual es? Seguramente este aquí."
     this.encuesta = "¿Dónde cenamos? ¿Qué día nos disfrazamos? ¿Cuál es la tematica de este año? ¿Alguna sugerencia?"
+
+    setTimeout(() => {
+      this.isLowerThan3 = false
+    }, 3000)
   }
 
   ngAfterViewInit() {
@@ -38,6 +44,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
     });
 
     this.blackOverlayVisible = false
+  }
+
+  onHeaderTouch() {
+    const scrollPosition = 0;
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
   }
 
   onLoguut(): void {

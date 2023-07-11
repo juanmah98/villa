@@ -1,6 +1,8 @@
-<div [class.blackLayer]="!blackOverlayVisible"></div>
+<div [class.blackLayer]="!blackOverlayVisible" *ngIf="isLowerThan3"></div>
+
 <div *ngIf="currentUser; else notLogged">
-  <app-header></app-header>
+  <app-header (click)="onHeaderTouch()"></app-header>
+  <!-- Cuando cliquemos en el header nos pondra la pagina arriba del todo -->
   <div class="home">
     <app-medals-collection></app-medals-collection>
 
