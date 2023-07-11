@@ -55,6 +55,31 @@ export class HomeComponent implements OnInit, AfterViewInit {
     });
   }
 
+
+
+  //Ya dejo preparados los botones para cuando queramos enlazarle acciones,
+  //los botones hay que sacarlos a un componente propio obviamente que se esta haciendo enorme y se repite mucho codigo
+
+  onInfoTouch() {
+    console.log("mas info")
+  }
+
+  onAlbumTouch() {
+    console.log("fotos")
+  }
+
+  onSpotyTouch() {
+    console.log("spoty")
+  }
+
+  onTricountTouch() {
+    console.log("tricount")
+  }
+
+  onSurveyTouch() {
+    console.log("encuestas")
+  }
+
   onLoguut(): void {
     console.log("Javi: No se cual es la configuracion de la API de google para cerrar sesión, pero vaya que eso deberia hacerse aqui")
   }
