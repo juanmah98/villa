@@ -6,7 +6,7 @@ export class User {
   LastName: string = ''
   Type: string = ''
   HasManaged: boolean = false
-  Medals: string[] = []
+  Medals: any[] = []
   id: string = ''
 
   public constructor(
@@ -16,7 +16,7 @@ export class User {
     lastName?: string,
     type?: string,
     hasManaged?: boolean,
-    medals?: string[],
+    medals?: any[],
     id?: string) {
       this.Email = email
       this.Picture = picture

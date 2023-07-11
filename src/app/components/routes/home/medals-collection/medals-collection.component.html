@@ -34,3 +34,36 @@
       <div class="medals-factory__medalOK"></div>
     </div>
   </div>
+
+  <p>--------------------------------------------------</p>
+
+ <!--  <div *ngFor="let tipoMedalla of medallas; let i = index">     
+    <div *ngFor="let medalla of tipoMedalla">
+      <div *ngIf="medalla==1" class="medals-factory__medalOK"></div>
+      <div *ngIf="medalla==0" class="medals-factory__medalNotOK"></div>
+      <p>Medalla {{ medalla }}</p>
+    </div>
+  </div> -->
+
+  <div class="medals-collection__container" *ngFor="let tipoMedalla of medallas; let i = index">
+    <div class="medals-factory">
+      <div class="medals-factory__title">Oro</div>
+      <div  *ngFor="let medalla of tipoMedalla.oro" class="medals-factory__medalNotOK" [ngClass]="{'medals-factory__medalNotOK': medalla === 1, 'medals-factory__medalOK': medalla === 0 }"></div>
+    </div>
+
+    <div class="medals-factory">
+      <div class="medals-factory__title">Plata</div>
+      <div  *ngFor="let medalla of tipoMedalla.plata" class="medals-factory__medalNotOK" [ngClass]="{'medals-factory__medalNotOK': medalla === 1, 'medals-factory__medalOK': medalla === 0 }"></div>
+    </div>
+
+    <div class="medals-factory">
+      <div class="medals-factory__title">Bronce</div>
+      <div  *ngFor="let medalla of tipoMedalla.bronce" class="medals-factory__medalNotOK" [ngClass]="{'medals-factory__medalNotOK': medalla === 1, 'medals-factory__medalOK': medalla === 0 }"></div>
+    </div>
+
+    <div class="medals-factory">
+      <div class="medals-factory__title">Cobre</div>
+      <div  *ngFor="let medalla of tipoMedalla.cobre" class="medals-factory__medalNotOK" [ngClass]="{'medals-factory__medalNotOK': medalla === 1, 'medals-factory__medalOK': medalla === 0 }"></div>
+    </div>
+    
+  </div>
