@@ -69,11 +69,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   onSpotyTouch() {
-    console.log("spoty")
+    const enlacePerfilSpotify = "https://open.spotify.com/artist/4q3ewBCX7sLwd24euuV69X"
+    window.open(enlacePerfilSpotify, '_blank');
   }
 
   onTricountTouch() {
-    console.log("tricount")
+    const enlaceTricount = "https://tricount.com/aCmHjyzqCMdwSxmScu"
+    window.open(enlaceTricount, '_blank');
   }
 
   onSurveyTouch() {
