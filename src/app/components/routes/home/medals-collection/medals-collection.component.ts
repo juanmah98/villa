@@ -29,4 +29,9 @@ export class MedalsCollectionComponent {
       this.medallas[0].bronce.push(this.currentUser.Medals[0].bronce[index]);
     }
   }
+
+  onMedalTouch(event: any) {
+    if(event.target.id == 0) console.log("medalla NO obtenida")
+    else console.log("medalla obtenida")
+  }
 }
