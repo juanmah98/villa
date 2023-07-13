@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   playlist: string;
   tricuount: string;
 
-  blackOverlayVisible: boolean = true
   isLowerThan3: boolean = true
 
   constructor(public popupService: PopupService) { }
@@ -33,7 +32,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     setTimeout(() => {
       this.isLowerThan3 = false
-    }, 3000)
+    }, 2500)
   }
 
   ngAfterViewInit() {
@@ -42,8 +41,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     window.scrollTo({
       top: scrollPosition
     });
-
-    this.blackOverlayVisible = false
   }
 
   onHeaderTouch() {
