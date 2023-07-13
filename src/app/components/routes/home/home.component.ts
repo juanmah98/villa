@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
-import { Subject, fromEvent, takeUntil } from 'rxjs';
+import { PopupService } from 'src/app/services/popup-service.service';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   blackOverlayVisible: boolean = true
   isLowerThan3: boolean = true
 
-  constructor() { }
+  constructor(public popupService: PopupService) { }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");
@@ -55,13 +55,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
     });
   }
 
-
-
   //Ya dejo preparados los botones para cuando queramos enlazarle acciones,
   //los botones hay que sacarlos a un componente propio obviamente que se esta haciendo enorme y se repite mucho codigo
 
   onInfoTouch() {
-    console.log("mas info")
+    this.popupService.actualizarMostrar(true)
   }
 
   onAlbumTouch() {
