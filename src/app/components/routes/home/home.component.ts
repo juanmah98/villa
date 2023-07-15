@@ -79,6 +79,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   onLoguut(): void {
-    console.log("Javi: No se cual es la configuracion de la API de google para cerrar sesión, pero vaya que eso deberia hacerse aqui")
+    localStorage.setItem('user', '')
+    document.location.href = "/"  
   }
 }
