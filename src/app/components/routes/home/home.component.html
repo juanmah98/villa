@@ -1,43 +1,70 @@
-<app-header></app-header>
-<body class="container-fluid">
-    <div class="row pt-5">
+<div class="blackLayer" *ngIf="isLowerThan3"></div>
 
-        <div class="col-12 text-center">
-            <h2>LOGO la villa 2023</h2>
+<div *ngIf="currentUser; else notLogged">
+
+  <app-popup-info *ngIf="popupService.mostrar"></app-popup-info>
+
+  <!-- Cuando cliquemos en el header nos pondra la pagina arriba del todo -->
+  <app-header (click)="onHeaderTouch()"></app-header>
+
+  <div class="home">
+    <app-medals-collection></app-medals-collection>
+
+    <!-- Todo el bloque de informacion lo sacare a otro componente, lo mismo con la parte inferior y la parte de las medallas -->
+    <div class="information">
+      <div class="information__title">Orange House</div>
+      <div class="information__adress">Cv750, 03509 Finestrat España</div>
+      <div class="information__description">{{description}}</div>
+      <div class="information__container">
+        <div class="information__container__button" (click)="onInfoTouch()">
+          Ver más
         </div>
-
-        <div class="col-12">
-
-            <div class="m-sm-5 m-1">
-                <p class="fw-bold fs-2">Orange House</p>
-                <p class="fs-5">Cv750, 03509 Finestrat España</p>
-            </div>
-
-            <div class="m-sm-5 m-1">
-                <p class=" fs-5">
-                Sexta edicion de la Villa. Donde por primera vez repetimos destino, 
-                fue la casa seleccionada para 2021, la segunda de España. En esta ocasión confiamos despertarnos de nuevo
-                con churros para todos y resaca para nadie.
-                </p>      
-               
-            </div>
-
-            <div class="m-sm-5 m-1 text-center">
-               
-            </div>
-
-        </div>
-
-        <div class="col-12 bg-black">
-            <div class="m-sm-5 m-1 d-flex">
-                <p class="fw-bold fs-1 bg-light p-2">Album de fotos</p>              
-            </div>
-
-            <div class="m-sm-5 m-1">
-                <button class="btn btn-light">FOTOS</button>      
-            </div>
-        </div>
-
-      
+      </div>
     </div>
-</body>
+
+    <div class="lower-section">
+      <div class="album__title">Album de fotos</div>
+      <div class="album__photos" (click)="onAlbumTouch()">
+        <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto1.jpg" alt="">
+        <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto2.jpg" alt="">
+        <img class="album__photos-size" src="../../../../assets/Imagenes/Home/Foto3.jpg" alt="">
+      </div>
+
+      <div class="buttons__button" (click)="onSpotyTouch()">
+        <div class="buttons__container">
+          <span class="buttons__title">Playlists oficiales</span>
+          <div class="buttons__text">{{playlist}}</div>
+        </div>
+        <div class="buttons__image"></div>
+      </div>
+
+      <div class="buttons__button" (click)="onTricountTouch()">
+        <div class="buttons__container">
+          <span class="buttons__title">Tricount</span>
+          <div class="buttons__text">{{tricuount}}</div>
+        </div>
+        <div class="buttons__image">
+        </div>
+      </div>
+
+      <div class="buttons__button" (click)="onSurveyTouch()">
+        <div class="buttons__container">
+          <span class="buttons__title">Encuestas</span>
+          <div class="buttons__text">{{encuesta}}</div>
+        </div>
+        <div class="buttons__image">
+        </div>
+      </div>
+
+      <div class="logout">
+        <span (click)="onLoguut()">Cerrar Sesión</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #notLogged>
+  Que te pires payaso
+  <!-- Utilizamos esta template para que nadie pueda acceder poniendo la URL a mano, comprobando que tengamos un userContext cargado de google -->
+  <!-- Aqui ya metemos lo que queramos, una opcion es meter porno hiper gore con el sonido a tope -->
+</ng-template>
