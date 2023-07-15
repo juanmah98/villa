@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, collectionData } from '@angular/fire/firestore';
+import { Firestore, addDoc, collection, collectionData } from '@angular/fire/firestore';
 import { Observable, find, from, map, switchMap, tap } from 'rxjs';
 import { User } from '../components/models/user.model';
 
@@ -38,5 +38,10 @@ export class DatabaseService {
     private getUsers(): Observable<User[]> {
       const userRef = collection(this.firestore, 'User');
       return collectionData(userRef, { idField: 'id' }) as Observable<User[]>;
+    }
+
+    addUser(clave: any){    
+      const claveRef = collection(this.firestore, 'User');
+      return addDoc(claveRef, clave);
     }
 }

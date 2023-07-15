@@ -5,18 +5,19 @@ import { InicioComponent } from './inicio/inicio.component';
 import { LoadingComponent } from './loading/loading.component';
 import { LayoutModule } from "../layout/layout.module";
 import { MedalsCollectionComponent } from './home/medals-collection/medals-collection.component';
+import { NewPersonComponent } from './new-person/new-person.component';
 
 @NgModule({
     declarations: [
         HomeComponent,
         MedalsCollectionComponent,
         InicioComponent,
-        LoadingComponent
+        LoadingComponent,
     ],
     exports: [
         HomeComponent,
         InicioComponent,
-        LoadingComponent
+        LoadingComponent,        
     ],
     imports: [
         CommonModule,
