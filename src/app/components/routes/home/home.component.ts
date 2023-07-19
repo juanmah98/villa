@@ -52,15 +52,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     });
   }
 
-  //Ya dejo preparados los botones para cuando queramos enlazarle acciones,
-  //los botones hay que sacarlos a un componente propio obviamente que se esta haciendo enorme y se repite mucho codigo
-
   onInfoTouch() {
     this.popupService.actualizarMostrar(true)
   }
 
   onAlbumTouch() {
-    console.log("fotos")
+    const enlaceTricount = "https://drive.google.com/drive/folders/18hNZqdmp0aL-GuEadGDaWIUTjlQviZnO?usp=drive_link"
+    window.open(enlaceTricount, '_blank');
   }
 
   onSpotyTouch() {
@@ -80,6 +78,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   onLoguut(): void {
     localStorage.setItem('user', '')
-    document.location.href = "/"  
+    document.location.href = "/"
   }
 }
