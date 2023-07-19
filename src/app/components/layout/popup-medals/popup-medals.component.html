@@ -1,7 +1,19 @@
 <div class="container">
   <div class="container__card">
-    <div class="image-gold"></div>
-    <div class="medal"></div>
+    <div [ngSwitch]="medalsPopupService.actualType">
+      <div *ngSwitchCase="'gold'" class="image-gold">
+        <div class="image-gold__medal"></div>
+      </div>
+      <div *ngSwitchCase="'silver'" class="image-silver">
+        <div class="image-silver__medal"></div>
+      </div>
+      <div *ngSwitchCase="'bronze'" class="image-bronze">
+        <div class="image-bronze__medal"></div>
+      </div>
+      <div *ngSwitchCase="'copper'" class="image-copper">
+        <div class="image-copper__medal"></div>
+      </div>
+    </div>
     <div class="container__title">Cinturón de campeones</div>
     <div class="container__subtitle">Hacer más de 2 trios en una villa con personas diferentes.</div>
   </div>

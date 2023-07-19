@@ -33,15 +33,18 @@ export class MedalsCollectionComponent {
 
   onMedalTouch(event: any, value: boolean) {
     this.medalsPopupService.actualizarMostrar(true)
+    this.medalsPopupService.selectedMedal(value, event.target.id, event.target.title)
 
     if (value) {
+      console.log(value)
       console.log(event.target.id)
       console.log(event.target.title)
-      console.log(value)
+      console.log(this.medalsPopupService.actualType)
     } else {
+      console.log(value)
       console.log(event.target.id)
       console.log(event.target.title)
-      console.log(value)
+      console.log(this.medalsPopupService.actualType)
     }
   }
 }

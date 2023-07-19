@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 
 @Component({
@@ -8,10 +8,10 @@ import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 })
 export class PopupMedalsComponent {
 
-  constructor(private popupService: MedalsPopupService) { }
+  constructor(public medalsPopupService: MedalsPopupService) { }
 
   onBackgroundTouched() {
-    this.popupService.actualizarMostrar(false)
+    this.medalsPopupService.actualizarMostrar(false)
   }
 
 }
