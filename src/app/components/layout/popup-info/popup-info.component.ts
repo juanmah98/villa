@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { PopupService } from 'src/app/services/popup-service.service';
 
 @Component({

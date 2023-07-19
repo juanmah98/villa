@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { User } from 'src/app/components/models/user.model';
+import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 
 @Component({
   selector: 'app-medals-collection',
@@ -16,7 +17,7 @@ export class MedalsCollectionComponent {
 
   private currentUser: User
 
-  constructor() { }
+  constructor(public medalsPopupService: MedalsPopupService) { }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");
@@ -30,8 +31,17 @@ export class MedalsCollectionComponent {
     }
   }
 
-  onMedalTouch(event: any) {
-    if(event.target.id == 0) console.log("medalla NO obtenida")
-    else console.log("medalla obtenida")
+  onMedalTouch(event: any, value: boolean) {
+    this.medalsPopupService.actualizarMostrar(true)
+
+    if (value) {
+      console.log(event.target.id)
+      console.log(event.target.title)
+      console.log(value)
+    } else {
+      console.log(event.target.id)
+      console.log(event.target.title)
+      console.log(value)
+    }
   }
 }

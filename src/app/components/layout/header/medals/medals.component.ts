@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/components/models/user.model';
 
 @Component({
   selector: 'app-medals',
@@ -11,15 +12,28 @@ export class MedalsComponent implements OnInit {
   bronzeMedals: string = "0"
   copperMedals: string = "0"
 
-  userGoldMedals: number = 1
-  userSilverMedals: number = 2
-  userBronzeMedals: number = 4
-  userCoppernMedals: number = 5
+  userGoldMedals: number = 0
+  userSilverMedals: number = 0
+  userBronzeMedals: number = 0
+  userCoppernMedals: number = 0
 
+  private currentUser: User;
 
   ngOnInit(): void {
+    const storedUserString = localStorage.getItem("user");
+    this.currentUser = JSON.parse(storedUserString);
 
+    this.getMedalsCount()
     this.generateMedalsValues(this.userGoldMedals, this.userSilverMedals, this.userBronzeMedals, this.userCoppernMedals)
+  }
+
+  private getMedalsCount(){
+    for (let index = 0; index < 5; index++) {
+      if(this.currentUser.Medals[0].oro[index]) this.userGoldMedals += 1
+      if(this.currentUser.Medals[0].plata[index]) this.userSilverMedals += 1
+      if(this.currentUser.Medals[0].bronce[index]) this.userBronzeMedals += 1
+      if(this.currentUser.Medals[0].cobre[index]) this.userCoppernMedals += 1
+    }
   }
 
   private generateMedalsValues(gold: number, silver: number, bronze: number, copper: number) {

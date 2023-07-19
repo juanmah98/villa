@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
 import { PopupService } from 'src/app/services/popup-service.service';
+import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   isLowerThan3: boolean = true
 
-  constructor(public popupService: PopupService) { }
+  constructor(
+    public popupService: PopupService,
+    public medalsPopupService: MedalsPopupService) { }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");

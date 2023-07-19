@@ -4,33 +4,33 @@
   <div class="medals-collection__container" *ngFor="let tipoMedalla of medallas; let i = index">
     <div class="medals-factory">
       <div class="medals-factory__title">Oro</div>
-      <div *ngFor="let medalla of tipoMedalla.oro" class="medals-factory__medalNotOK"
-        [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-        (click)="onMedalTouch($event)" id={{medalla}}>
+      <div *ngFor="let medalla of tipoMedalla.oro; let i = index" class="medals-factory__medalNotOK"
+      [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
+      (click)="onMedalTouch($event, medalla)" id={{i}} title="oro">
       </div>
     </div>
 
     <div class="medals-factory">
       <div class="medals-factory__title">Plata</div>
-      <div *ngFor="let medalla of tipoMedalla.plata" class="medals-factory__medalNotOK"
-        [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-        (click)="onMedalTouch($event)" id={{medalla}}>
+      <div *ngFor="let medalla of tipoMedalla.plata; let i = index" class="medals-factory__medalNotOK"
+      [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
+      (click)="onMedalTouch($event, medalla)" id={{i}} title="plata">
       </div>
     </div>
 
     <div class="medals-factory">
       <div class="medals-factory__title">Bronce</div>
-      <div *ngFor="let medalla of tipoMedalla.bronce" class="medals-factory__medalNotOK"
-        [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-        (click)="onMedalTouch($event)" id={{medalla}}>
+      <div *ngFor="let medalla of tipoMedalla.bronce; let i = index" class="medals-factory__medalNotOK"
+      [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
+      (click)="onMedalTouch($event, medalla)" id={{i}} title="bronce">
       </div>
     </div>
 
     <div class="medals-factory">
       <div class="medals-factory__title">Cobre</div>
-      <div *ngFor="let medalla of tipoMedalla.cobre" class="medals-factory__medalNotOK"
+      <div *ngFor="let medalla of tipoMedalla.cobre; let i = index" class="medals-factory__medalNotOK"
         [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-        (click)="onMedalTouch($event)" id={{medalla}}>
+        (click)="onMedalTouch($event, medalla)" id={{i}} title="cobre">
       </div>
     </div>
 
