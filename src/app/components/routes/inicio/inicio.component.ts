@@ -8,7 +8,6 @@ declare var google: any;
 })
 export class InicioComponent implements OnInit {
   googleUser: any
-  loading:boolean = true;
 
   constructor() { }
 
@@ -23,7 +22,7 @@ export class InicioComponent implements OnInit {
       document.getElementById("buttonDiv"),
       { theme: "outline", size: "large" }
     );
-
+    
     google.accounts.id.prompt();
   }
 }
