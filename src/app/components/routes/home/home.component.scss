@@ -170,5 +170,19 @@
 
   font-family: "montserrat";
   font-size: 10px;
-  color: dimgray;
+
+
+  &__button{
+
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: dimgray;
+  }
+
+
+  &__button:hover{
+    border-radius: 5px;
+    background-color: rgb(185, 185, 185);
+  }
 }

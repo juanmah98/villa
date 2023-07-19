@@ -1,0 +1,77 @@
+<body class="container-fluid">
+
+   <div class="row justify-content-center">
+
+<div class="bg-login pt-3 pb-4 shadow col-sm-6 col-12 text-center"  style="font-family: montserrat;">
+
+     <p class="fs-2 login">Nueva persona</p>
+
+     <form  (ngSumbit)="onSumbit()" [formGroup]="registerForm">
+        <div class="pt-0">
+            <input formControlName="Name" type="text" placeholder="First Name" class="rounded shadow px-3" style="border: none;">
+        </div>
+
+        <div class="pt-2 justify-content-center">
+           <input formControlName="LastName" type="text" placeholder="Last Name" class="rounded shadow px-3 " style="border: none;">  
+        </div>
+
+         <div class="pt-2 justify-content-center">
+            <input formControlName="Email" type="email" placeholder="Email" class="rounded shadow px-3 " style="border: none;">   
+         </div>
+
+         <div class="pt-2 justify-content-center">
+            <input formControlName="Type" type="text" placeholder="Type" class="rounded shadow px-3 " style="border: none;">  
+         </div>
+
+         <div class="pt-2 justify-content-center">
+            <p class="">HasManaged</p>
+            <input formControlName="HasManaged" type="checkbox" placeholder="HasManaged" class="rounded shadow px-3 " style="border: none;">  
+         </div>
+
+         <p class="">Medals</p>
+
+         <div class="pt-2 justify-content-center">
+            <p class="">Oro</p>
+            <input formControlName="medalsOro1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsOro2" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsOro3" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsOro4" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsOro5" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+         </div>
+         <div class="pt-2 justify-content-center">
+            <p class="">Plata</p>
+            <input formControlName="medalsPlata1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsPlata1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsPlata1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsPlata1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsPlata1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+         </div>
+         <div class="pt-2 justify-content-center">
+            <p class="">Bronce</p>
+            <input formControlName="medalsBronce1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsBronce2" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsBronce3" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsBronce4" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsBronce5" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+         </div>
+         <div class="pt-2 justify-content-center">
+            <p class="">Cobre</p>
+            <input formControlName="medalsCobre1" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsCobre2" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsCobre3" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsCobre4" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+            <input formControlName="medalsCobre5" type="checkbox" placeholder="medals" class="rounded shadow m-1" style="border: none;">  
+         </div>
+
+        <div class="pt-4 ">
+           <button  class="btn btn-primary px-4 mx-1" (click)="onSumbit()">
+                Guardar
+            </button>
+        </div>           
+        
+     </form>
+     
+  
+</div>
+</div>
+</body>

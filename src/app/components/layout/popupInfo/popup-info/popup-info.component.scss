@@ -14,6 +14,7 @@
 
 .container {
   position: fixed;
+  height: 100vh;
   z-index: 10;
   padding: 0;
 
@@ -25,20 +26,85 @@
   &__card {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
-    height: 35rem;
+    height: 36.5rem;
     width: 19.5rem;
     border-radius: 1.5rem;
     background-color: white;
-    margin: 6rem 2rem 0rem 2rem;
     padding: 1.5rem;
+
+    z-index: 11;
   }
 
-  &__close {
-    background-color: white;
-    margin-top: 1rem;
-    padding: 0.2rem 1.2rem;
-    border-radius: 0.5rem;
+  &__title {
+    font-family: montserrat-bold;
+    font-size: 22px;
   }
+
+  &__subtitle {
+    font-family: montserrat;
+    font-size: 10px;
+    line-height: 0.8;
+
+    padding-left: 0.25rem;
+  }
+
+  &__maps {
+    background-color: #d9d9d9;
+    border-radius: 1rem;
+
+    margin-top: 1rem;
+    height: 7rem;
+  }
+
+  &__scheduler {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 0.65rem;
+    column-gap: 0.5rem;
+
+    margin-top: 1rem;
+  }
+
+  &__description {
+    margin-top: 1rem;
+  }
+
+  &__description-text {
+    font-family: montserrat;
+    font-size: 10px;
+
+    line-height: 1.2;
+  }
+
+  &__description-text-bold {
+    font-family: montserrat-bold;
+    font-size: 10px;
+
+    line-height: 1.2;
+  }
+}
+
+.lower-info {
+  margin-top: 2rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    row-gap: 0.45rem;
+
+    margin-top: 1rem;
+  }
+}
+
+.close {
+  background-color: white;
+  margin-top: 1rem;
+  padding: 0.2rem 1.2rem;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 11;
 }
