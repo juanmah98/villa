@@ -23,22 +23,22 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 2',
-    description: 'description 2',
+    title: 'Cinturón de campeón',
+    description: 'Hacer más de 2 trios en una sola villa con personas diferentes.',
     type: 'gold',
     index: 1
   },
   {
     image: '',
-    title: 'title 3',
-    description: 'description 3',
+    title: 'Llamad a mi abogado',
+    description: 'Ser detenido por la policia durante una villa por los motivos que sean.',
     type: 'gold',
     index: 2
   },
   {
     image: '',
-    title: 'title 4',
-    description: 'description 4',
+    title: 'Llamad a mi abogado',
+    description: 'Ser detenido por la policia durante una villa por los motivos que sean.',
     type: 'gold',
     index: 3
   },
@@ -58,36 +58,36 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 2',
-    description: 'description 2',
+    title: 'Filemón',
+    description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
     type: 'silver',
     index: 1
   },
   {
     image: '',
-    title: 'title 3',
-    description: 'description 3',
+    title: 'El mesias',
+    description: 'Conseguir remontar la fiesta un día donde todo estaba perdido.',
     type: 'silver',
     index: 2
   },
   {
     image: '',
-    title: 'title 4',
-    description: 'description 4',
+    title: 'JackAss',
+    description: 'Terminar en el hospital o similares por algun accidente durante la villa.',
     type: 'silver',
     index: 3
   },
   {
     image: '',
-    title: 'title 5',
-    description: 'description 5',
+    title: 'Willy Fog',
+    description: 'Recorrer más de 750Km para poder asistir a una villa.',
     type: 'silver',
     index: 4
   },
   {
     image: '',
-    title: 'title 1',
-    description: 'description 1',
+    title: 'N-U-D-E',
+    description: 'Levantar unos cuantos UWUU!! por ponerte en pelotas.',
     type: 'bronze',
     index: 0
   },
@@ -100,8 +100,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 3',
-    description: 'description 3',
+    title: 'Eduardo manos tijeras',
+    description: 'Teñirte o raparte el pelo de manera interesante durante un día de la villa.',
     type: 'bronze',
     index: 2
   },
@@ -121,22 +121,22 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 1',
-    description: 'description 1',
+    title: 'Campeón, crack, tifón',
+    description: 'Ganar un torneo de beerpong durante una villa.',
     type: 'copper',
     index: 0
   },
   {
     image: '',
-    title: 'title 2',
-    description: 'description 2',
+    title: 'Barman',
+    description: 'Traer o preparar alcohol tipico de tu tierra para el disfrute de todos.',
     type: 'copper',
     index: 1
   },
   {
     image: '',
-    title: 'title 3',
-    description: 'description 3',
+    title: 'Turbo-Ciego',
+    description: 'Hacer 2 o más turbolatas cada día de una villa.',
     type: 'copper',
     index: 2
   },

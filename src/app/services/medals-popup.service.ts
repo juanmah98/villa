@@ -30,11 +30,12 @@ export class MedalsPopupService {
       this.actualDescription = medal.description
 
     } else {
+      let medal = MEDALS.find((medal) => medal.type === 'unknown')
 
-      this.actualImage = ''
-      this.actualTitle = '???'
-      this.actualDescription = 'Yo que sé, prueba a hacer cosas, quizás consigues algo.'
-      this.actualType = 'unkown'
+      this.actualImage = medal.image
+      this.actualTitle = medal.title
+      this.actualDescription = medal.description
+      this.actualType = medal.type
     }
   }
 }
