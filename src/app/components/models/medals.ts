@@ -92,9 +92,9 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: '',
-    title: 'title 2',
-    description: 'description 2',
+    image: 'SantaClaus.png',
+    title: 'Santa Claus',
+    description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
     index: 1
   },

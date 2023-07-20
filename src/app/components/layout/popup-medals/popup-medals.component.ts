@@ -8,12 +8,15 @@ import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 })
 export class PopupMedalsComponent implements OnInit {
   image: string
+  type: string;
   title: string
   description: string
 
   constructor(public medalsPopupService: MedalsPopupService) { }
 
   ngOnInit(): void {
+    this.image = this.getImagePath(this.medalsPopupService.actualImage)
+    this.type = this.medalsPopupService.actualType
     this.title = this.medalsPopupService.actualTitle
     this.description = this.medalsPopupService.actualDescription
   }
@@ -22,4 +25,7 @@ export class PopupMedalsComponent implements OnInit {
     this.medalsPopupService.actualizarMostrar(false)
   }
 
+  getImagePath(imageName: string): string {
+    return `../../../../assets/Imagenes/Medals/${imageName}`;
+  }
 }

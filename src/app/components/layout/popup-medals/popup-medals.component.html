@@ -2,12 +2,13 @@
   <div class="container__card">
     <div [ngSwitch]="medalsPopupService.actualType">
       <div *ngSwitchCase="'gold'" class="image-gold">
-        <div class="image-gold__medal"></div>
+
       </div>
       <div *ngSwitchCase="'silver'" class="image-silver">
         <div class="image-silver__medal"></div>
       </div>
       <div *ngSwitchCase="'bronze'" class="image-bronze">
+        <img src = {{image}}>
         <div class="image-bronze__medal"></div>
       </div>
       <div *ngSwitchCase="'copper'" class="image-copper">
@@ -29,3 +30,4 @@
     &nbsp;Cerrar</div> <!-- En vez de la "X" deberiamos poner el icono de la cruz -->
   <div class="background" (click)="onBackgroundTouched()"></div>
 </div>
+
