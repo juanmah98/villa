@@ -142,6 +142,28 @@
   }
 }
 
+.image-unkown {
+  display: flex;
+  justify-content: center;
+
+  background-color: #272727;
+  border: 0.4rem solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  width: 16.5rem;
+  height: 15rem;
+
+  &__medal {
+    display: flex;
+    position: absolute;
+    margin-top: 13.3rem;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .close {
   background-color: white;
   margin-top: 1rem;

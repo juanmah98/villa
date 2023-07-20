@@ -13,9 +13,12 @@
       <div *ngSwitchCase="'copper'" class="image-copper">
         <div class="image-copper__medal"></div>
       </div>
+      <div *ngSwitchCase="'unkown'" class="image-unkown">
+        <div class="image-unkown__medal"></div>
+      </div>
     </div>
-    <div class="container__title">Cinturón de campeones</div>
-    <div class="container__subtitle">Hacer más de 2 trios en una villa con personas diferentes.</div>
+    <div class="container__title">{{title}}</div>
+    <div class="container__subtitle">{{description}}</div>
   </div>
 
   <div class="close" (click)="onBackgroundTouched()"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"
