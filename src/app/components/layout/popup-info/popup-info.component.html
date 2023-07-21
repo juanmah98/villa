@@ -20,9 +20,13 @@
         <span class="container__description-text-bold">Organizadores:</span>
         <span class="container__description-text">Alvaro del Rio, Gisela Deumal</span>
         <span class="container__description-text-bold">Temática disfraz:</span>
-        <span class="container__description-text">Memes</span>
+        <span class="container__description-text">Los 2000</span>
         <span class="container__description-text-bold">Comida Especial:</span>
-        <span class="container__description-text">Viernes 25</span>
+        <span class="container__description-text">
+          Viernes 25
+          <span *ngIf="enlaceUbicacionCena" (click)="onSecundaryAdressTouched()"> | Ver ubicación</span>
+        </span>
+
       </div>
     </div>
   </div>
