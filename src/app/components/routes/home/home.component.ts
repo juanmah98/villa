@@ -88,7 +88,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   onSurveyTouch() {
-    console.log("encuestas")
     this.surveysPopupService.actualizarMostrar(true)
   }
 

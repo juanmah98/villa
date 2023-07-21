@@ -98,7 +98,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: 'SantaClaus.png',
+    image: '',
     title: 'title 2',
     description: 'description 2',
     type: 'bronze',

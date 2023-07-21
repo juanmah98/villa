@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from 'src/app/services/database.service';
 import { User } from '../../models/user.model';
 import { Router } from '@angular/router';
+import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-loading',
@@ -18,9 +19,15 @@ export class LoadingComponent implements OnInit {
   timmerMax: number = 6000
   backgroundText: string;
 
+  sensitiveContentImg: SafeResourceUrl;
+
   constructor(
     private databaseService: DatabaseService,
-    private router: Router) { }
+    private router: Router,
+    private sanitizer: DomSanitizer) {
+      const sensitiveContentImgUrl = "../../../../../assets/svg/PrivacyIcon.svg";
+      this.sensitiveContentImg = this.sanitizer.bypassSecurityTrustResourceUrl(sensitiveContentImgUrl);
+    }
 
   ngOnInit(): void {
     this.startAnimation()
@@ -32,7 +39,6 @@ export class LoadingComponent implements OnInit {
     setTimeout(() => {
       this.router.navigate(['/home']);
     }, Math.floor(Math.random() * (this.timmerMax - this.timmerMin + 1)) + this.timmerMin);
-    //Esto es para que genere una sensacion falsa de carga, porque en verdad le estoy haciendo esperar un tiempo aleatorio entre 3 y 6 segundos por la cara
   }
 
   private startAnimation() {
