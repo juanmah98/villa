@@ -4,6 +4,7 @@
 
   <app-popup-info *ngIf="popupService.mostrar"></app-popup-info>
   <app-popup-medals *ngIf="medalsPopupService.mostrar"></app-popup-medals>
+  <app-popup-survey *ngIf="surveysPopupService.mostrar"></app-popup-survey>
 
   <!-- Cuando cliquemos en el header nos pondra la pagina arriba del todo -->
   <app-header (click)="onHeaderTouch()"></app-header>

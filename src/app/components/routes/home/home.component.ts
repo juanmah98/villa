@@ -1,8 +1,9 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
-import { PopupService } from 'src/app/services/popup-service.service';
+import { PopupService } from 'src/app/services/popup.service';
 import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { surveysPopupService } from 'src/app/services/surveys-popup.service';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +25,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(
     public popupService: PopupService,
     public medalsPopupService: MedalsPopupService,
+    public surveysPopupService: surveysPopupService,
     private sanitizer: DomSanitizer) {
     const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
     this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
@@ -87,6 +89,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   onSurveyTouch() {
     console.log("encuestas")
+    this.surveysPopupService.actualizarMostrar(true)
   }
 
   onLoguut(): void {

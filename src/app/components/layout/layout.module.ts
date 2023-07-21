@@ -4,18 +4,21 @@ import { HeaderComponent } from './header/header.component';
 import { MedalsComponent } from './header/medals/medals.component';
 import { PopupInfoComponent } from './popup-info/popup-info.component';
 import { PopupMedalsComponent } from './popup-medals/popup-medals.component';
+import { PopupSurveyComponent } from './popup-survey/popup-survey.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     MedalsComponent,
     PopupInfoComponent,
-    PopupMedalsComponent
+    PopupMedalsComponent,
+    PopupSurveyComponent
   ],
   exports: [
     HeaderComponent,
     PopupInfoComponent,
-    PopupMedalsComponent
+    PopupMedalsComponent,
+    PopupSurveyComponent
   ],
   imports: [
     CommonModule
