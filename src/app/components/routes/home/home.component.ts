@@ -24,9 +24,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
     public popupService: PopupService,
     public medalsPopupService: MedalsPopupService,
     private sanitizer: DomSanitizer) {
-      const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
-      this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
-     }
+    const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
+    this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
+  }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");

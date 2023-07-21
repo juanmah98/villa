@@ -5,24 +5,24 @@
     <div class="medals-factory">
       <div class="medals-factory__title">Oro</div>
       <div *ngFor="let medalla of tipoMedalla.oro; let i = index" class="medals-factory__medalNotOK"
-      [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-      (click)="onMedalTouch($event, medalla)" id={{i}} title="gold">
+        [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
+        (click)="onMedalTouch($event, medalla)" id={{i}} title="gold">
       </div>
     </div>
 
     <div class="medals-factory">
       <div class="medals-factory__title">Plata</div>
       <div *ngFor="let medalla of tipoMedalla.plata; let i = index" class="medals-factory__medalNotOK"
-      [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-      (click)="onMedalTouch($event, medalla)" id={{i}} title="silver">
+        [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
+        (click)="onMedalTouch($event, medalla)" id={{i}} title="silver">
       </div>
     </div>
 
     <div class="medals-factory">
       <div class="medals-factory__title">Bronce</div>
       <div *ngFor="let medalla of tipoMedalla.bronce; let i = index" class="medals-factory__medalNotOK"
-      [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
-      (click)="onMedalTouch($event, medalla)" id={{i}} title="bronze">
+        [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
+        (click)="onMedalTouch($event, medalla)" id={{i}} title="bronze">
       </div>
     </div>
 
@@ -33,7 +33,5 @@
         (click)="onMedalTouch($event, medalla)" id={{i}} title="copper">
       </div>
     </div>
-
   </div>
-
 </div>

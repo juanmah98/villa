@@ -8,7 +8,7 @@
         <div class="image-silver__medal"></div>
       </div>
       <div *ngSwitchCase="'bronze'" class="image-bronze">
-        <img src = {{image}}>
+        <img src={{image}}>
         <div class="image-bronze__medal"></div>
       </div>
       <div *ngSwitchCase="'copper'" class="image-copper">
@@ -30,4 +30,3 @@
     &nbsp;Cerrar</div> <!-- En vez de la "X" deberiamos poner el icono de la cruz -->
   <div class="background" (click)="onBackgroundTouched()"></div>
 </div>
-
