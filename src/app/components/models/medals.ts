@@ -7,6 +7,8 @@ export interface Medal {
 }
 
 export const MEDALS: Medal[] = [
+
+  // Medallas de oro
   {
     image: '',
     title: '???',
@@ -30,8 +32,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'Llamad a mi abogado',
-    description: 'Ser detenido por la policia durante una villa por los motivos que sean.',
+    title: 'title 3',
+    description: 'description 3',
     type: 'gold',
     index: 2
   },
@@ -49,41 +51,45 @@ export const MEDALS: Medal[] = [
     type: 'gold',
     index: 4
   },
-  {
-    image: '',
-    title: 'title 1',
-    description: 'description 1',
-    type: 'silver',
-    index: 0
-  },
-  {
-    image: '',
-    title: 'Filemón',
-    description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
-    type: 'silver',
-    index: 1
-  },
-  {
-    image: '',
-    title: 'El mesias',
-    description: 'Conseguir remontar la fiesta un día donde todo estaba perdido.',
-    type: 'silver',
-    index: 2
-  },
+
+  // Medallas de plata
   {
     image: '',
     title: 'JackAss',
     description: 'Terminar en el hospital o similares por algun accidente durante la villa.',
     type: 'silver',
-    index: 3
+    index: 0
   },
   {
     image: '',
     title: 'Willy Fog',
     description: 'Recorrer más de 750Km para poder asistir a una villa.',
     type: 'silver',
+    index: 1
+  },
+  {
+    image: '',
+    title: 'Filemón',
+    description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
+    type: 'silver',
+    index: 2
+  },
+  {
+    image: '',
+    title: 'El mesias',
+    description: 'Conseguir remontar la fiesta un día donde todo estaba perdido.',
+    type: 'silver',
+    index: 3
+  },
+  {
+    image: '',
+    title: 'title 5',
+    description: 'description 5',
+    type: 'silver',
     index: 4
   },
+
+  // Medallas de bronce
   {
     image: '',
     title: 'N-U-D-E',
@@ -93,8 +99,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: 'SantaClaus.png',
-    title: 'Santa Claus',
-    description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
+    title: 'title 2',
+    description: 'description 2',
     type: 'bronze',
     index: 1
   },
@@ -106,9 +112,9 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
-    title: 'title 4',
-    description: 'description 4',
+    image: 'SantaClaus.png',
+    title: 'Santa Claus',
+    description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
     index: 3
   },
@@ -119,6 +125,8 @@ export const MEDALS: Medal[] = [
     type: 'bronze',
     index: 4
   },
+
+  // Medallas de cobre
   {
     image: '',
     title: 'Campeón, crack, tifón',
