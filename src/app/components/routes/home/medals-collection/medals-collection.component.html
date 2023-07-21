@@ -11,7 +11,7 @@
 
     <div class="medals-factory">
       <div class="medals-factory__title">Plata</div>
-        <img *ngFor="let medalla of tipoMedalla.plata; let i = index" class="medals-factory__medalNotOK"
+      <img *ngFor="let medalla of tipoMedalla.plata; let i = index" class="medals-factory__medalNotOK"
         [ngClass]="{'medals-factory__medalNotOK': medalla === false, 'medals-factory__medalOK': medalla === true }"
         (click)="onMedalTouch($event, medalla)" id={{i}} title="silver" [src]="silverMedalImg">
     </div>

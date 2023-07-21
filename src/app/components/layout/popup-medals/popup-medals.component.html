@@ -2,17 +2,20 @@
   <div class="container__card">
     <div [ngSwitch]="medalsPopupService.actualType">
       <div *ngSwitchCase="'gold'" class="image-gold">
-        <div class="image-gold__medal"></div>
+        <img src={{image}}>
+        <img class="image-gold__medal" [src]="goldMedalImg">
       </div>
       <div *ngSwitchCase="'silver'" class="image-silver">
-        <div class="image-silver__medal"></div>
+        <img src={{image}}>
+        <img class="image-silver__medal" [src]="silverMedalImg">
       </div>
       <div *ngSwitchCase="'bronze'" class="image-bronze">
         <img src={{image}}>
-        <div class="image-bronze__medal"></div>
+        <img class="image-bronze__medal" [src]="bronzeMedalImg">
       </div>
       <div *ngSwitchCase="'copper'" class="image-copper">
-        <div class="image-copper__medal"></div>
+        <img src={{image}}>
+        <img class="image-copper__medal" [src]="copperMedalImg">
       </div>
       <div *ngSwitchCase="'unknown'" class="image-unknown">
         <div class="image-unknown__medal"></div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 
 @Component({
@@ -12,7 +13,21 @@ export class PopupMedalsComponent implements OnInit {
   title: string
   description: string
 
-  constructor(public medalsPopupService: MedalsPopupService) { }
+  goldMedalImg: SafeResourceUrl;
+  silverMedalImg: SafeResourceUrl;
+  bronzeMedalImg: SafeResourceUrl;
+  copperMedalImg: SafeResourceUrl;
+
+  constructor(public medalsPopupService: MedalsPopupService, private sanitizer: DomSanitizer) {
+    const goldUrl = "../../../../../assets/svg/GoldMedalIcon.svg";
+    this.goldMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(goldUrl);
+    const silverUrl = "../../../../../assets/svg/SilverMedalIcon.svg";
+    this.silverMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(silverUrl);
+    const bronzeUrl = "../../../../../assets/svg/BronzeMedalIcon.svg";
+    this.bronzeMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(bronzeUrl);
+    const copperUrl = "../../../../../assets/svg/CopperMedalIcon.svg";
+    this.copperMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(copperUrl);
+  }
 
   ngOnInit(): void {
     this.image = this.getImagePath(this.medalsPopupService.actualImage)

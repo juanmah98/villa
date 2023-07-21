@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   isLowerThan3: boolean = true
 
   laVillaLogoImg: SafeResourceUrl;
+  buttonIconImg: SafeResourceUrl;
 
   constructor(
     public popupService: PopupService,
@@ -26,6 +27,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
     private sanitizer: DomSanitizer) {
     const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
     this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
+    const buttonIconImgUrl = "../../../../../assets/svg/ButtonIcon.svg";
+    this.buttonIconImg = this.sanitizer.bypassSecurityTrustResourceUrl(buttonIconImgUrl);
   }
 
   ngOnInit(): void {
