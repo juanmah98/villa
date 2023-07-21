@@ -1,6 +1,6 @@
 <div class='header'>
   <div class="picture-container">
-    <div class="header__verified" *ngIf="isVerified"></div>
+    <img *ngIf="isVerified" class="header__verified" [src]="isVerifiedImg" alt="Mi imagen SVG">
     <div class="header__picture">
       <img src={{profilePicture}}>
     </div>

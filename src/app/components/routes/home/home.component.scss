@@ -186,3 +186,16 @@
     background-color: rgb(185, 185, 185);
   }
 }
+
+.containerLogo {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    width: 27vw;
+    opacity: 70%;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+

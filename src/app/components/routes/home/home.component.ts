@@ -2,6 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
 import { PopupService } from 'src/app/services/popup-service.service';
 import { MedalsPopupService } from 'src/app/services/medals-popup.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -17,9 +18,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   isLowerThan3: boolean = true
 
+  laVillaLogoImg: SafeResourceUrl;
+
   constructor(
     public popupService: PopupService,
-    public medalsPopupService: MedalsPopupService) { }
+    public medalsPopupService: MedalsPopupService,
+    private sanitizer: DomSanitizer) {
+      const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
+      this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
+     }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");

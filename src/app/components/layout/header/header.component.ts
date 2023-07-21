@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
@@ -12,9 +13,14 @@ export class HeaderComponent implements OnInit {
   fullName: string
   isVerified: boolean;
 
+  isVerifiedImg: SafeResourceUrl;
+
   private currentUser: User
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) {
+    const isVerifiedImgdUrl = "../../../../../assets/svg/VerifiedIcon.svg";
+    this.isVerifiedImg = this.sanitizer.bypassSecurityTrustResourceUrl(isVerifiedImgdUrl);
+  }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");

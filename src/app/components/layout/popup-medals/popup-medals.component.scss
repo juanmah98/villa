@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
 
-    height: 24rem;
+    height: 25rem;
     width: 19.5rem;
     border-radius: 1.5rem;
     background-color: white;
@@ -62,12 +62,12 @@
   border: 0.4rem solid rgb(211, 179, 92);
   border-radius: 1rem;
   width: 16.5rem;
-  height: 15rem;
+  height: 17rem;
 
   &__medal {
     display: flex;
     position: absolute;
-    margin-top: 13.3rem;
+    margin-top: 15.3rem;
 
     background-color: rgb(211, 179, 92);
     border-radius: 100%;
@@ -84,12 +84,12 @@
   border: 0.4rem solid rgb(138, 138, 138);
   border-radius: 1rem;
   width: 16.5rem;
-  height: 15rem;
+  height: 17rem;
 
   &__medal {
     display: flex;
     position: absolute;
-    margin-top: 13.3rem;
+    margin-top: 15.3rem;
 
     background-color: rgb(138, 138, 138);
     border-radius: 100%;
@@ -106,18 +106,23 @@
   border: 0.4rem solid rgb(153, 90, 48);
   border-radius: 1rem;
   width: 16.5rem;
-  height: 15rem;
+  height: 17rem;
 
   &__medal {
     display: flex;
     position: absolute;
-    margin-top: 13.3rem;
+    margin-top: 15.3rem;
 
     background-color: rgb(153, 90, 48);
     border-radius: 100%;
     width: 2.5rem;
     height: 2.5rem;
   }
+}
+.image-bronze img {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .image-copper {
@@ -128,12 +133,12 @@
   border: 0.4rem solid rgb(85, 44, 21);
   border-radius: 1rem;
   width: 16.5rem;
-  height: 15rem;
+  height: 17rem;
 
   &__medal {
     display: flex;
     position: absolute;
-    margin-top: 13.3rem;
+    margin-top: 15.3rem;
 
     background-color: rgb(85, 44, 21);
     border-radius: 100%;
@@ -150,12 +155,12 @@
   border: 0.4rem solid rgb(0, 0, 0);
   border-radius: 1rem;
   width: 16.5rem;
-  height: 15rem;
+  height: 17rem;
 
   &__medal {
     display: flex;
     position: absolute;
-    margin-top: 13.3rem;
+    margin-top: 15.3rem;
 
     background-color: rgb(0, 0, 0);
     border-radius: 100%;

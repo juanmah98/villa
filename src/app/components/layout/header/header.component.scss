@@ -27,7 +27,7 @@
     min-width: 65px;
     overflow: hidden;
     border-radius: 50%;
-    border: .2rem solid rgb(211, 179, 92);
+    border: .2rem solid rgb(231, 185, 94);
     position: relative;
   }
 
@@ -38,14 +38,12 @@
   }
 
   &__verified{
-    background-color: rgb(211, 179, 92);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-
+    width: 25px;
+    height: 25px;
     position: absolute;
+
     z-index: 3;
-    margin-top: 3.5rem;
+    margin-top: 3.35rem;
   }
 
   &__main {

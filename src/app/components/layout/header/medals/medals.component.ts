@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { User } from 'src/app/components/models/user.model';
 
 @Component({
@@ -17,7 +18,23 @@ export class MedalsComponent implements OnInit {
   userBronzeMedals: number = 0
   userCoppernMedals: number = 0
 
+  goldMedalImg: SafeResourceUrl;
+  silverMedalImg: SafeResourceUrl;
+  bronzeMedalImg: SafeResourceUrl;
+  copperMedalImg: SafeResourceUrl;
+
   private currentUser: User;
+
+  constructor(private sanitizer: DomSanitizer) {
+    const goldUrl = "../../../../../assets/svg/GoldMedalIcon.svg";
+    this.goldMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(goldUrl);
+    const silverUrl = "../../../../../assets/svg/SilverMedalIcon.svg";
+    this.silverMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(silverUrl);
+    const bronzeUrl = "../../../../../assets/svg/BronzeMedalIcon.svg";
+    this.bronzeMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(bronzeUrl);
+    const copperUrl = "../../../../../assets/svg/CopperMedalIcon.svg";
+    this.copperMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(copperUrl);
+  }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");

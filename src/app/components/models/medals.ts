@@ -122,7 +122,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'Campeón, crack, tifón',
-    description: 'Ganar un torneo de beerpong durante una villa.',
+    description: 'Ganar un torneo de beer pong durante una villa.',
     type: 'copper',
     index: 0
   },
