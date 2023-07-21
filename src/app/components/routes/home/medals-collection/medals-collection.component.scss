@@ -48,8 +48,6 @@
   }
 
   &__medalOK {
-    background-color: rgb(78 78 78);
-    border-radius: 50%;
     width: 30px;
     min-width: 30px;
     height: 30px;
@@ -59,9 +57,7 @@
   }
 
   &__medalNotOK {
-    opacity: 35%;
-    background-color: rgb(78 78 78);
-    border-radius: 50%;
+    opacity: 25%;
     width: 30px;
     min-width: 30px;
     height: 30px;

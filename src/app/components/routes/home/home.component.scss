@@ -34,6 +34,18 @@
   scroll-behavior: smooth;
 }
 
+.containerLogo {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    width: 27vw;
+    opacity: 70%;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
 .information {
   margin-top: 1rem;
   margin-left: 2rem;
@@ -49,6 +61,7 @@
     font-family: "montserrat";
     font-size: 8px;
     margin-left: 0.25rem;
+    line-height: 0.5rem;
   }
 
   &__description {
@@ -181,17 +194,5 @@
   &__button:hover {
     border-radius: 5px;
     background-color: rgb(185, 185, 185);
-  }
-}
-
-.containerLogo {
-  display: flex;
-  justify-content: center;
-
-  &__logo {
-    width: 27vw;
-    opacity: 70%;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
   }
 }
