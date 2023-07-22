@@ -17,16 +17,16 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: '',
+    image: 'lannister.png',
     title: 'Tyrion Lannister',
-    description: 'Conseguir que venga un enenao de fiesta a la villa de la manera que sea.',
+    description: 'Conseguir que venga un enano de fiesta a la villa de la manera que sea.',
     type: 'gold',
     index: 0
   },
   {
     image: 'Cinturon.png',
     title: 'Cinturón de campeón',
-    description: 'Hacer más de 2 trios en una sola villa con personas diferentes.',
+    description: 'Hacer más de 2 tríóos en una sola villa con personas diferentes.',
     type: 'gold',
     index: 1
   },
@@ -40,7 +40,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'Cops.png',
     title: 'Llamad a mi abogado',
-    description: 'Ser detenido por la policia durante una villa por los motivos que sean.',
+    description: 'Ser detenido por la policía durante una villa por los motivos que sean.',
     type: 'gold',
     index: 3
   },
@@ -56,7 +56,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'JackAss',
-    description: 'Terminar en el hospital o similares por algun accidente durante la villa.',
+    description: 'Terminar en el hospital o similares por algún accidente durante la villa.',
     type: 'silver',
     index: 0
   },
@@ -76,7 +76,7 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'El mesias',
+    title: 'El mesías',
     description: 'Conseguir remontar la fiesta un día donde todo estaba perdido.',
     type: 'silver',
     index: 3
@@ -112,7 +112,7 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
+    image: 'Regalos.png',
     title: 'Santa Claus',
     description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
@@ -137,7 +137,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'Barman',
-    description: 'Traer o preparar alcohol tipico de tu tierra para el disfrute de todos.',
+    description: 'Traer o preparar alcohol típico de tu tierra para el disfrute de todos.',
     type: 'copper',
     index: 1
   },
