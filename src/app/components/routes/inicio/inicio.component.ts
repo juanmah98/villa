@@ -43,4 +43,9 @@ export class InicioComponent implements OnInit, AfterViewInit {
 
     document.location.href = "/loading"
   }
+
+  onContactTouched() {
+    const enlaceTricount = "https://www.google.com/search?q=prostitutas+con+sida+baratas+cerca&rlz=1C1CHBF_esES976ES976&oq=donde+trabaja+mi+abuela&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEyNjI0ajBqMagCALACAA&sourceid=chrome&ie=UTF-8"
+    window.open(enlaceTricount, '_blank');
+  }
 }

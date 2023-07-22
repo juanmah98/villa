@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
 
-    height: 25rem;
+    height: 26rem;
     width: 19.5rem;
     border-radius: 1.5rem;
     background-color: white;
@@ -70,15 +70,15 @@
 
   @keyframes pulseGold {
     0% {
-      filter: drop-shadow(0px 0px 5px rgb(231, 185, 94));
-    }
-
-    50% {
       filter: drop-shadow(0px 0px 15px rgb(231, 185, 94));
     }
 
+    50% {
+      filter: drop-shadow(0px 0px 0px rgb(231, 185, 94));
+    }
+
     100% {
-      filter: drop-shadow(0px 0px 5px rgb(231, 185, 94));
+      filter: drop-shadow(0px 0px 15px rgb(231, 185, 94));
     }
   }
 
@@ -90,6 +90,11 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+}
+.image-gold img {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .image-silver {
@@ -110,6 +115,11 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+}
+.image-silver img {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .image-bronze {
@@ -155,6 +165,11 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+}
+.image-copper img {
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .image-unknown {

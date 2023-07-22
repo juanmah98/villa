@@ -24,7 +24,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: '',
+    image: 'Cinturon.png',
     title: 'Cinturón de campeón',
     description: 'Hacer más de 2 trios en una sola villa con personas diferentes.',
     type: 'gold',
@@ -38,7 +38,7 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
+    image: 'Cops.png',
     title: 'Llamad a mi abogado',
     description: 'Ser detenido por la policia durante una villa por los motivos que sean.',
     type: 'gold',
@@ -91,7 +91,7 @@ export const MEDALS: Medal[] = [
 
   // Medallas de bronce
   {
-    image: '',
+    image: 'nude.png',
     title: 'N-U-D-E',
     description: 'Levantar unos cuantos UWUU!! por ponerte en pelotas.',
     type: 'bronze',
@@ -112,7 +112,7 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: 'SantaClaus.png',
+    image: '',
     title: 'Santa Claus',
     description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
@@ -128,7 +128,7 @@ export const MEDALS: Medal[] = [
 
   // Medallas de cobre
   {
-    image: '',
+    image: 'BeerPongCup.png',
     title: 'Campeón, crack, tifón',
     description: 'Ganar un torneo de beer pong durante una villa.',
     type: 'copper',
@@ -158,7 +158,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'nadamaR',
-    description: 'Ramadán inverso, solo puedes beber de día, nada de comida hasta la madrugada.',
+    description: 'Ramadán inverso, solo puedes beber de día, nada de comida hasta que caiga el sol.',
     type: 'copper',
     index: 4
   },
