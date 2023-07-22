@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 declare var google: any;
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent implements OnInit {
+export class InicioComponent implements OnInit, AfterViewInit {
   googleUser: any
 
-  constructor() { }
+  constructor() {}
 
   async ngOnInit(): Promise<void> {
    await google.accounts.id.initialize({
@@ -17,12 +17,14 @@ export class InicioComponent implements OnInit {
       callback: this.handleCredentialResponse
     });
 
-   await google.accounts.id.renderButton(
+    google.accounts.id.prompt();
+  }
+
+  ngAfterViewInit() {
+    google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
       { theme: "outline", size: "large" }
     );
-
-    google.accounts.id.prompt();
   }
 
   handleCredentialResponse(response: any) {

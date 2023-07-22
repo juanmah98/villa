@@ -13,14 +13,11 @@ export class HeaderComponent implements OnInit {
   fullName: string
   isVerified: boolean;
 
-  isVerifiedImg: SafeResourceUrl;
+  isVerifiedImg = "../../../../../assets/svg/VerifiedIcon.svg";
 
   private currentUser: User
 
-  constructor(private sanitizer: DomSanitizer) {
-    const isVerifiedImgdUrl = "../../../../../assets/svg/VerifiedIcon.svg";
-    this.isVerifiedImg = this.sanitizer.bypassSecurityTrustResourceUrl(isVerifiedImgdUrl);
-  }
+  constructor() { }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");

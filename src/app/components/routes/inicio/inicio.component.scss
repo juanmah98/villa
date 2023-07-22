@@ -1,0 +1,81 @@
+.loading{
+  // background:  linear-gradient(rgba(0, 0, 0, 0.756), rgba(20, 20, 20, 0.751), rgba(8, 8, 8, 0.762)), url("../../../../assets/Imagenes/Inicio/fondo.gif");
+  background-color: white;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 2rem;
+}
+
+.containerLogo {
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    width: 30vw;
+    max-width: 8rem;
+
+    margin-bottom: 1rem;
+  }
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 15rem;
+  width: 18rem;
+
+  background: #ffffff;
+  border-radius: 1rem;
+  filter: drop-shadow(0px 0px 15px rgb(207, 207, 207));
+
+  margin: 2rem 2rem 1rem 2rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0px 3rem;
+  margin-bottom: 3rem;
+
+  &__title {
+    font-family: montserrat-bold;
+    font-size: 25px;
+  }
+
+  &__subtitle {
+    font-family: montserrat;
+    text-align: center;
+    font-size: 9px;
+    line-height: 1;
+  }
+}
+
+.googleButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 0;
+  height: 0;
+
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.contactButton {
+  font-family: montserrat;
+  font-size: 12px;
+  color: black;
+
+  opacity: 50%;
+}

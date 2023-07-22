@@ -18,8 +18,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 1',
-    description: 'description 1',
+    title: 'Tyrion Lannister',
+    description: 'Conseguir que venga un enenao de fiesta a la villa de la manera que sea.',
     type: 'gold',
     index: 0
   },
@@ -157,8 +157,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 5',
-    description: 'description 5',
+    title: 'nadamaR',
+    description: 'Ramadán inverso, solo puedes beber de día, nada de comida hasta la madrugada.',
     type: 'copper',
     index: 4
   },
