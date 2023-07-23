@@ -32,3 +32,12 @@ export class User {
       this.Picture = picture
     }
 }
+
+export enum Usertype {
+  infiltrado = "¿Quien pollas eres?",
+  invitado = "Invitado",
+  novato = "Novato",
+  veterano = "Veterano",
+  leyenda = "Leyenda",
+  fundador = "Fundador"
+}

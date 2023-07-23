@@ -45,7 +45,7 @@ export const MEDALS: Medal[] = [
     index: 3
   },
   {
-    image: '',
+    image: 'Tatuatis.png',
     title: 'Malandro',
     description: 'Hacerte un tatuaje durante una villa.',
     type: 'gold',
@@ -112,8 +112,8 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: 'Regalos.png',
-    title: 'Santa Claus',
+    image: 'RegalosClaro.png',
+    title: 'Robin Hood',
     description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
     index: 3
@@ -135,7 +135,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: '',
+    image: 'BebidaTipica.png',
     title: 'Barman',
     description: 'Traer o preparar alcohol típico de tu tierra para el disfrute de todos.',
     type: 'copper',
@@ -149,14 +149,14 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
+    image: 'Potas.png',
     title: 'El Potas',
     description: 'Acabar vomitando durante uno o más dias en una villa.',
     type: 'copper',
     index: 3
   },
   {
-    image: 'CenaDeVaso.png',
+    image: 'Ramadan.png',
     title: 'nadamaR',
     description: 'Ramadán inverso, solo puedes beber de día, nada de comida hasta que caiga el sol.',
     type: 'copper',

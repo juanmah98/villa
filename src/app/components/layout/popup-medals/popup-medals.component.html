@@ -1,29 +1,49 @@
 <div class="container">
-  <div class="container__card">
-    <div [ngSwitch]="medalsPopupService.actualType">
-      <div *ngSwitchCase="'gold'" class="image-gold">
+  <div [ngSwitch]="medalsPopupService.actualType" class="over">
+    <div *ngSwitchCase="'gold'" class="container__cardGold">
+      <div class="image-gold">
         <img src={{image}}>
         <img class="image-gold__medal" [src]="goldMedalImg">
       </div>
-      <div *ngSwitchCase="'silver'" class="image-silver">
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'silver'" class="container__card">
+      <div class="image-silver">
         <img src={{image}}>
         <img class="image-silver__medal" [src]="silverMedalImg">
       </div>
-      <div *ngSwitchCase="'bronze'" class="image-bronze">
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'bronze'" class="container__card">
+      <div class="image-bronze">
         <img src={{image}}>
         <img class="image-bronze__medal" [src]="bronzeMedalImg">
       </div>
-      <div *ngSwitchCase="'copper'" class="image-copper">
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'copper'" class="container__card">
+      <div class="image-copper">
         <img src={{image}}>
         <img class="image-copper__medal" [src]="copperMedalImg">
       </div>
-      <div *ngSwitchCase="'unknown'" class="image-unknown">
-        <img class="image-unknown__img" src={{image}}>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'unknown'" class="container__card">
+      <div class="image-unknown">
+        <img src={{image}}>
         <img class="image-unknown__medal" [src]="unknownMedalImg">
       </div>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
     </div>
-    <div class="container__title">{{title}}</div>
-    <div class="container__subtitle">{{description}}</div>
   </div>
 
   <div class="close" (click)="onBackgroundTouched()"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"
