@@ -75,7 +75,7 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
+    image: 'Messi.png',
     title: 'El mesías',
     description: 'Conseguir remontar la fiesta un día donde todo estaba perdido.',
     type: 'silver',
