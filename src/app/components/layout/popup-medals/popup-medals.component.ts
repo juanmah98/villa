@@ -17,6 +17,7 @@ export class PopupMedalsComponent implements OnInit {
   silverMedalImg: SafeResourceUrl;
   bronzeMedalImg: SafeResourceUrl;
   copperMedalImg: SafeResourceUrl;
+  unknownMedalImg: SafeResourceUrl;
 
   constructor(public medalsPopupService: MedalsPopupService, private sanitizer: DomSanitizer) {
     const goldUrl = "../../../../../assets/svg/GoldMedalIcon.svg";
@@ -27,6 +28,8 @@ export class PopupMedalsComponent implements OnInit {
     this.bronzeMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(bronzeUrl);
     const copperUrl = "../../../../../assets/svg/CopperMedalIcon.svg";
     this.copperMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(copperUrl);
+    const unknownUrl = "../../../../../assets/svg/UnknownMedalIcon.svg";
+    this.unknownMedalImg = this.sanitizer.bypassSecurityTrustResourceUrl(unknownUrl);
   }
 
   ngOnInit(): void {

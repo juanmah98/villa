@@ -67,7 +67,6 @@
 
   animation: pulseGold 3s infinite;
 
-
   @keyframes pulseGold {
     0% {
       filter: drop-shadow(0px 0px 15px rgb(231, 185, 94));
@@ -192,6 +191,17 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+
+  &__img {
+    opacity: 75%;
+    filter: blur(7px);
+  }
+}
+.image-unknown img {
+  background-color: black;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .close {

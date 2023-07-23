@@ -46,8 +46,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 5',
-    description: 'description 5',
+    title: 'Malandro',
+    description: 'Hacerte un tatuaje durante una villa.',
     type: 'gold',
     index: 4
   },
@@ -69,8 +69,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'Filemón',
-    description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
+    title: 'El caganer',
+    description: 'Cagarse en medio del salón de una villa.',
     type: 'silver',
     index: 2
   },
@@ -83,8 +83,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 5',
-    description: 'description 5',
+    title: 'Perforado',
+    description: 'Hacerte un piercing durante una villa.',
     type: 'silver',
     index: 4
   },
@@ -99,8 +99,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 2',
-    description: 'description 2',
+    title: 'Mister World Wide',
+    description: 'Traer o hacer de Dj durante una villa.',
     type: 'bronze',
     index: 1
   },
@@ -119,11 +119,11 @@ export const MEDALS: Medal[] = [
     index: 3
   },
   {
-    title: 'title 5',
     image: '',
-    description: 'description 5',
+    title: 'Filemón',
+    description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
     type: 'bronze',
-    index: 4
+    index: 2
   },
 
   // Medallas de cobre
@@ -150,8 +150,8 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'title 4',
-    description: 'description 4',
+    title: 'El Potas',
+    description: 'Acabar vomitando durante uno o más dias en una villa.',
     type: 'copper',
     index: 3
   },
