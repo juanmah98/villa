@@ -11,6 +11,17 @@
   padding-bottom: 2rem;
 }
 
+.backgroundTexture {
+  position: absolute;
+  scale: 1.2;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
 .containerLogo {
   display: flex;
   justify-content: center;
