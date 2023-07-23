@@ -123,7 +123,7 @@ export const MEDALS: Medal[] = [
     title: 'Filemón',
     description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
     type: 'bronze',
-    index: 2
+    index: 4
   },
 
   // Medallas de cobre
