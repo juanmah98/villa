@@ -128,7 +128,7 @@ export const MEDALS: Medal[] = [
 
   // Medallas de cobre
   {
-    image: 'BeerPongCup.png',
+    image: 'beerpongwinnerCup.png',
     title: 'Campeón, crack, tifón',
     description: 'Ganar un torneo de beer pong durante una villa.',
     type: 'copper',
@@ -142,7 +142,7 @@ export const MEDALS: Medal[] = [
     index: 1
   },
   {
-    image: '',
+    image: 'TurboCiego.png',
     title: 'Turbo-Ciego',
     description: 'Hacer 2 o más turbolatas cada día de una villa.',
     type: 'copper',
@@ -156,7 +156,7 @@ export const MEDALS: Medal[] = [
     index: 3
   },
   {
-    image: '',
+    image: 'CenaDeVaso.png',
     title: 'nadamaR',
     description: 'Ramadán inverso, solo puedes beber de día, nada de comida hasta que caiga el sol.',
     type: 'copper',
