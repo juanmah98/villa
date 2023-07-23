@@ -48,8 +48,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.isLowerThan3 = false
     }, 2500)
-
-    console.log(this.currentUser)
   }
 
   ngAfterViewInit() {
