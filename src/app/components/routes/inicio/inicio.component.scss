@@ -9,18 +9,10 @@
   align-items: center;
 
   padding-bottom: 2rem;
-}
 
-.backgroundTexture {
-  position: fixed;
-  scale: 1.2;
-  opacity: 80%;
-
-  display: flex;
-  justify-content: center;
-
-  width: 100vw;
-  height: 100vh;
+  background-image: url("../../../../assets/Imagenes/Home/TexturaFondo.png");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .containerLogo {

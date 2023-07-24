@@ -26,7 +26,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'Cinturon.png',
     title: 'Cinturón de campeón',
-    description: 'Hacer más de 2 tríóos en una sola villa con personas diferentes.',
+    description: 'Hacer más de 2 tríos en una sola villa con personas diferentes.',
     type: 'gold',
     index: 1
   },
@@ -100,7 +100,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'Mister World Wide',
-    description: 'Traer a alguien o hacer tu mismo de Dj durante una villa.',
+    description: 'Traer o hacer tu mismo de Dj durante una villa.',
     type: 'bronze',
     index: 1
   },
@@ -120,7 +120,7 @@ export const MEDALS: Medal[] = [
   },
   {
     image: '',
-    title: 'Filemón',
+    title: 'Carapolla',
     description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
     type: 'bronze',
     index: 4
