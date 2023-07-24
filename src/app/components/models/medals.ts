@@ -40,7 +40,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'Cops.png',
     title: 'Llamad a mi abogado',
-    description: 'Ser detenido por la policía durante una villa por los motivos que sean.',
+    description: 'Ser detenido por la policía por los motivos que sean durante una villa.',
     type: 'gold',
     index: 3
   },
@@ -121,7 +121,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'Carapolla.png',
     title: 'Carapolla',
-    description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
+    description: 'Recibir un "mortadelo" de manera voluntaria y estando consciente.',
     type: 'bronze',
     index: 4
   },
