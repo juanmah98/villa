@@ -47,7 +47,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'Tatuatis.png',
     title: 'Malandro',
-    description: 'Hacerte un tatuaje durante una villa.',
+    description: 'Hacerte un o más tatuajes durante cualquier momento de un villa.',
     type: 'gold',
     index: 4
   },
@@ -70,7 +70,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'El caganer',
-    description: 'Cagarse en medio del salón de una villa.',
+    description: 'Enhorabuena, te has cagado en medio del salón, cada uno con sus capacidades.',
     type: 'silver',
     index: 2
   },
@@ -84,7 +84,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'Perforado',
-    description: 'Hacerte un piercing durante una villa.',
+    description: 'Hacerte uno o varios piercings durante una villa, con los medios que sean.',
     type: 'silver',
     index: 4
   },
@@ -100,7 +100,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'Mister World Wide',
-    description: 'Traer o hacer de Dj durante una villa.',
+    description: 'Traer a alguien o hacer tu mismo de Dj durante una villa.',
     type: 'bronze',
     index: 1
   },
