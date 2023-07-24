@@ -119,7 +119,7 @@ export const MEDALS: Medal[] = [
     index: 3
   },
   {
-    image: '',
+    image: 'Carapolla.png',
     title: 'Carapolla',
     description: 'Recibir un "mortadelo" de manera voluntaria y siendo consciente.',
     type: 'bronze',
