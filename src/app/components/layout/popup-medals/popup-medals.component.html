@@ -1,0 +1,56 @@
+<div class="container">
+  <div [ngSwitch]="medalsPopupService.actualType" class="over">
+    <div *ngSwitchCase="'gold'" class="container__cardGold">
+      <div class="image-gold">
+        <img src={{image}}>
+        <img class="image-gold__medal" [src]="goldMedalImg">
+      </div>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'silver'" class="container__card">
+      <div class="image-silver">
+        <img src={{image}}>
+        <img class="image-silver__medal" [src]="silverMedalImg">
+      </div>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'bronze'" class="container__card">
+      <div class="image-bronze">
+        <img src={{image}}>
+        <img class="image-bronze__medal" [src]="bronzeMedalImg">
+      </div>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'copper'" class="container__card">
+      <div class="image-copper">
+        <img src={{image}}>
+        <img class="image-copper__medal" [src]="copperMedalImg">
+      </div>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+
+    <div *ngSwitchCase="'unknown'" class="container__card">
+      <div class="image-unknown">
+        <img class="image-unknown__img" src={{image}}>
+        <img class="image-unknown__medal" [src]="unknownMedalImg">
+      </div>
+      <div class="container__title">{{title}}</div>
+      <div class="container__subtitle">{{description}}</div>
+    </div>
+  </div>
+
+  <div class="close" (click)="onBackgroundTouched()"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 2.91L13.09 0L8 5.09L2.91 0L0 2.91L5.09 8L0 13.09L2.91 16L8 10.91L13.09 16L16 13.09L10.91 8L16 2.91Z"
+        fill="#222222" />
+    </svg>
+    &nbsp;Cerrar</div> <!-- En vez de la "X" deberiamos poner el icono de la cruz -->
+  <div class="background" (click)="onBackgroundTouched()"></div>
+</div>

@@ -1,11 +1,14 @@
 <div class='header'>
-  <div class="header__verified" *ngIf="isVerified"></div>
-  <div class="header__picture">
-    <img src={{profilePicture}}>
+  <div class="picture-container">
+    <img *ngIf="isVerified" class="header__verified" [src]="isVerifiedImg">
+    <div class="header__picture">
+      <img src={{profilePicture}}>
+    </div>
   </div>
   <div class="header__main">
     <div class="header__main__subtitle-type"> {{type}} </div>
-    <div class="header__main__title" [ngClass]="{'medium': fullName.length <= 20, 'small': fullName.length > 20}"> {{fullName}} </div>
+    <div class="header__main__title" [ngClass]="{'medium': fullName.length <= 20, 'small': fullName.length > 20}">
+      {{fullName}} </div>
     <app-medals></app-medals>
   </div>
 </div>

@@ -43,6 +43,28 @@
   margin-bottom: 1rem;
 }
 
+.sensitiveContentIcon {
+  color: rgb(255, 255, 255);
+  animation: pulseIcon 1.5s infinite;
+  margin-top: 1rem;
+  width: 50px;
+  opacity: 80%;
+}
+
+@keyframes pulseIcon {
+  0% {
+    filter: drop-shadow(0px 0px 10px white);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 20px white);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 10px white);
+  }
+}
+
 .overlay {
   font-family: 'zasline';
   color: white;
@@ -53,3 +75,4 @@
   overflow-wrap: anywhere;
   z-index: 1;
 }
+

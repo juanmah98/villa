@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,8 @@ export class HeaderComponent implements OnInit {
   type: string
   fullName: string
   isVerified: boolean;
+
+  isVerifiedImg = "../../../../../assets/svg/VerifiedIcon.svg";
 
   private currentUser: User
 

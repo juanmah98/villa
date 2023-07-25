@@ -1,7 +1,7 @@
 .medals-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 
 .medals {
@@ -14,8 +14,6 @@
   margin-right: 0.4rem;
 
   &__image {
-    background-color: rgb(216, 186, 53);
-    border-radius: 50%;
     width: 15px;
     height: 15px;
   }

@@ -1,14 +1,19 @@
-<div class="blackLayer" *ngIf="isLowerThan3"></div>
-
 <div *ngIf="currentUser; else notLogged">
 
+  <div class="blackLayer" *ngIf="isLowerThan3"></div>
   <app-popup-info *ngIf="popupService.mostrar"></app-popup-info>
+  <app-popup-medals *ngIf="medalsPopupService.mostrar"></app-popup-medals>
+  <app-popup-survey *ngIf="surveysPopupService.mostrar"></app-popup-survey>
 
   <!-- Cuando cliquemos en el header nos pondra la pagina arriba del todo -->
   <app-header (click)="onHeaderTouch()"></app-header>
 
   <div class="home">
     <app-medals-collection></app-medals-collection>
+
+    <div class="containerLogo">
+      <img class="containerLogo__logo" [src]="laVillaLogoImg">
+    </div>
 
     <!-- Todo el bloque de informacion lo sacare a otro componente, lo mismo con la parte inferior y la parte de las medallas -->
     <div class="information">
@@ -35,7 +40,7 @@
           <span class="buttons__title">Playlists oficiales</span>
           <div class="buttons__text">{{playlist}}</div>
         </div>
-        <div class="buttons__image"></div>
+        <img class="buttons__image" [src]="buttonIconImg">
       </div>
 
       <div class="buttons__button" (click)="onTricountTouch()">
@@ -43,8 +48,7 @@
           <span class="buttons__title">Tricount</span>
           <div class="buttons__text">{{tricuount}}</div>
         </div>
-        <div class="buttons__image">
-        </div>
+        <img class="buttons__image" [src]="buttonIconImg">
       </div>
 
       <div class="buttons__button" (click)="onSurveyTouch()">
@@ -52,19 +56,23 @@
           <span class="buttons__title">Encuestas</span>
           <div class="buttons__text">{{encuesta}}</div>
         </div>
-        <div class="buttons__image">
-        </div>
+        <img class="buttons__image" [src]="buttonIconImg">
       </div>
 
       <div class="logout">
-        <button class="logout__button"  (click)="onLoguut()">Cerrar Sesión</button>
+        <button class="logout__button" (click)="onLoguut()">Cerrar Sesión</button>
       </div>
     </div>
   </div>
 </div>
 
 <ng-template #notLogged>
-  Que te pires payaso
+  <div class="notLogged">
+    <div class="notLogged__text">Que te pires payaso</div>
+    <div class="notLogged__background">
+      <img src="../../../../assets/gifs/4832193.gif">
+    </div>
+  </div>
   <!-- Utilizamos esta template para que nadie pueda acceder poniendo la URL a mano, comprobando que tengamos un userContext cargado de google -->
   <!-- Aqui ya metemos lo que queramos, una opcion es meter porno hiper gore con el sonido a tope -->
 </ng-template>

@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 declare var google: any;
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent implements OnInit {
+export class InicioComponent implements OnInit, AfterViewInit {
   googleUser: any
 
-  constructor() { }
+  constructor() {}
 
   async ngOnInit(): Promise<void> {
    await google.accounts.id.initialize({
@@ -17,12 +17,14 @@ export class InicioComponent implements OnInit {
       callback: this.handleCredentialResponse
     });
 
-   await google.accounts.id.renderButton(
+    google.accounts.id.prompt();
+  }
+
+  ngAfterViewInit() {
+    google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
       { theme: "outline", size: "large" }
     );
-
-    google.accounts.id.prompt();
   }
 
   handleCredentialResponse(response: any) {
@@ -40,5 +42,10 @@ export class InicioComponent implements OnInit {
     localStorage.setItem("profilePhoto", this.googleUser.picture)
 
     document.location.href = "/loading"
+  }
+
+  onContactTouched() {
+    const enlaceTricount = "https://www.google.com/search?q=prostitutas+con+sida+baratas+cerca&rlz=1C1CHBF_esES976ES976&oq=donde+trabaja+mi+abuela&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEyNjI0ajBqMagCALACAA&sourceid=chrome&ie=UTF-8"
+    window.open(enlaceTricount, '_blank');
   }
 }

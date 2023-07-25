@@ -17,7 +17,7 @@ import { NewPersonComponent } from './new-person/new-person.component';
     exports: [
         HomeComponent,
         InicioComponent,
-        LoadingComponent,        
+        LoadingComponent,
     ],
     imports: [
         CommonModule,
