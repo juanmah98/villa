@@ -152,7 +152,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'ElPotas.png',
     title: 'El Potas',
-    description: 'Acabar vomitando durante uno o más dias en una villa.',
+    description: 'Acabar vomitando durante uno o más días en una villa.',
     type: 'copper',
     index: 4
   },
