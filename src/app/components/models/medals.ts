@@ -82,7 +82,7 @@ export const MEDALS: Medal[] = [
     index: 3
   },
   {
-    image: '',
+    image: 'caganer.png',
     title: 'El caganer',
     description: 'Enhorabuena, te has cagado en medio del salón, cada uno con sus capacidades.',
     type: 'silver',
