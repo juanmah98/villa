@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 declare var google: any;
 
 @Component({
@@ -6,7 +6,7 @@ declare var google: any;
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent implements OnInit, AfterViewInit {
+export class InicioComponent implements OnInit {
   googleUser: any
 
   constructor() {}
@@ -17,11 +17,9 @@ export class InicioComponent implements OnInit, AfterViewInit {
       callback: this.handleCredentialResponse
     });
 
-    google.accounts.id.prompt();
-  }
+    await google.accounts.id.prompt();
 
-  ngAfterViewInit() {
-    google.accounts.id.renderButton(
+    await google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
       { theme: "outline", size: "large" }
     );
