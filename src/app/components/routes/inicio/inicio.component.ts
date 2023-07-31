@@ -9,11 +9,11 @@ declare var google: any;
 export class InicioComponent implements OnInit {
   googleUser: any
 
-  constructor() {}
+  constructor() { }
 
   async ngOnInit(): Promise<void> {
-   setTimeout(() => {
-     google.accounts.id.initialize({
+    setTimeout(() => {
+      google.accounts.id.initialize({
         client_id: '112109968528-8s98plf90uargeq2t4imemec1ilap2j9.apps.googleusercontent.com',
         callback: this.handleCredentialResponse
       });
@@ -24,7 +24,7 @@ export class InicioComponent implements OnInit {
         document.getElementById("buttonDiv"),
         { theme: "outline", size: "large" }
       );
-   }, 1000)
+    }, 1000)
   }
 
   handleCredentialResponse(response: any) {
