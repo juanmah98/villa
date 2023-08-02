@@ -54,9 +54,9 @@ export const MEDALS: Medal[] = [
 
   // Medallas de plata
   {
-    image: 'JackAss.png',
-    title: 'JackAss',
-    description: 'Terminar en el hospital o similares por algún accidente durante la villa.',
+    image: '',
+    title: 'Por definir',
+    description: 'Pues eso coño que no se me ha ocurrido uno todavia, dejame en paz.',
     type: 'silver',
     index: 0
   },
