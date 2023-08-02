@@ -38,7 +38,7 @@ export class LoadingComponent implements OnInit {
 
     setTimeout(() => {
       this.router.navigate(['/home']);
-    }, Math.floor(Math.random() * (this.timmerMax - this.timmerMin + 1)) + this.timmerMin);
+    }, 1000);
   }
 
   private startAnimation() {

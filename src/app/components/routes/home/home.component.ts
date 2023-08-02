@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   playlist: string;
   tricuount: string;
 
-  isLowerThan3: boolean = true
+  isLowerThanX: boolean = true
 
   laVillaLogoImg: SafeResourceUrl;
   buttonIconImg: SafeResourceUrl;
@@ -27,16 +27,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
     public medalsPopupService: MedalsPopupService,
     public surveysPopupService: surveysPopupService,
     private sanitizer: DomSanitizer) {
-    const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
-    this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
-    const buttonIconImgUrl = "../../../../../assets/svg/ButtonIcon.svg";
-    this.buttonIconImg = this.sanitizer.bypassSecurityTrustResourceUrl(buttonIconImgUrl);
+      const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
+      this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
+      const buttonIconImgUrl = "../../../../../assets/svg/ButtonIcon.svg";
+      this.buttonIconImg = this.sanitizer.bypassSecurityTrustResourceUrl(buttonIconImgUrl);
   }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");
     this.currentUser = JSON.parse(storedUserString);
-
 
     //Este quizas lo podemos pasar a la base de datos, asi tenemos capacidad de modificar estos valores sin tener que volver a montar la app, ya que en cada inicio accederia a los valores de firebase
     this.description = "Sexta edición de la Villa. Donde por primera vez repetimos destino, fue la casa seleccionada para 2021, la segunda de España. En esta ocasión confiamos despertarnos de nuevo con churros para todos y resaca para nadie."
@@ -45,9 +44,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.playlist = "¿Quieres escuchar una lista que ha sonado y no te acuerdas de cuál es? Seguramente este aquí."
     this.encuesta = "¿Dónde cenamos? ¿Qué día nos disfrazamos? ¿Cuál es la temática de este año? ¿Alguna sugerencia?"
 
-    setTimeout(() => {
-      this.isLowerThan3 = false
-    }, 2500)
+    this.isLowerThan(5000);
   }
 
   ngAfterViewInit() {
@@ -56,6 +53,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
     window.scrollTo({
       top: scrollPosition
     });
+  }
+
+  isLowerThan(miliseconds: number) {
+    setTimeout(() => {
+      this.isLowerThanX = false
+    }, miliseconds)
   }
 
   onHeaderTouch() {

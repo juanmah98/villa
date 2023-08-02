@@ -1,25 +1,24 @@
-.blackLayer {
-  background-color: black;
+.loading-overlay {
+  z-index: 20;
+  position: fixed;
   width: 100vw;
-  height: 100vh;
+
+  opacity: 0;
 
   animation-name: fadeOut;
-  animation-duration: 3s;
-
-  position: fixed;
-  z-index: 15;
-  padding: 0;
-
-  opacity: 0%;
+  animation-duration: 5s;
 }
 
 @keyframes fadeOut {
   0% {
     opacity: 100%;
   }
-
+  50% {
+    opacity: 100%;
+  }
   100% {
     opacity: 0%;
+    display: none;
   }
 }
 
