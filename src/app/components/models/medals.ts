@@ -12,7 +12,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: '???',
-    description: 'Yo que sé, prueba a hacer cosas, quizás consigues algo.',
+    description: 'Yo que sé, prueba a hacer cosas, quizás consigues algo crack.',
     type: 'unknown',
     index: 0
   },
@@ -31,16 +31,16 @@ export const MEDALS: Medal[] = [
     index: 1
   },
   {
-    image: '',
-    title: 'title 3',
-    description: 'description 3',
+    image: 'LlamadAMiAbogado.png',
+    title: 'Llamad a mi abogado',
+    description: 'Ser detenido por la policía por los motivos que sean durante una villa.',
     type: 'gold',
     index: 2
   },
   {
-    image: 'LlamadAMiAbogado.png',
-    title: 'Llamad a mi abogado',
-    description: 'Ser detenido por la policía por los motivos que sean durante una villa.',
+    image: 'JackAss.png',
+    title: 'JackAss',
+    description: 'Terminar en el hospital por algún accidente durante la villa.',
     type: 'gold',
     index: 3
   },
