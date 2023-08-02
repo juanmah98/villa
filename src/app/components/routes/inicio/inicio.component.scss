@@ -69,11 +69,33 @@
   justify-content: center;
   align-items: center;
 
-  width: 0;
-  height: 0;
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(244 244 244);
+  border: 0;
 
-  border-radius: 0.8rem;
+  font-family: montserrat-bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9px;
+  line-height: 1;
+  color: rgb(150, 150, 150);
+
   margin-bottom: 1rem;
+
+  animation: loadingAnimation 1s;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    opacity: 0%;
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 100%;
+    filter: blur(0px);
+  }
 }
 
 .contactButton {

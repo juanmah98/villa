@@ -1,6 +1,13 @@
+<div class="loading-overlay" *ngIf="isLowerThanX">
+  <app-loading>
+    <audio autoplay>
+      <source src="../../../../assets/Sounds/nevado-trimmed.mp3" type="audio/mp3">
+    </audio>
+  </app-loading>
+</div>
+
 <div *ngIf="currentUser; else notLogged">
 
-  <div class="blackLayer" *ngIf="isLowerThan3"></div>
   <app-popup-info *ngIf="popupService.mostrar"></app-popup-info>
   <app-popup-medals *ngIf="medalsPopupService.mostrar"></app-popup-medals>
   <app-popup-survey *ngIf="surveysPopupService.mostrar"></app-popup-survey>
