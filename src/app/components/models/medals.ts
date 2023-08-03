@@ -8,7 +8,7 @@ export interface Medal {
 
 export const MEDALS: Medal[] = [
 
-  // Medallas de oro
+  // Medallas bloqueadas
   {
     image: '',
     title: '???',
@@ -16,6 +16,8 @@ export const MEDALS: Medal[] = [
     type: 'unknown',
     index: 0
   },
+
+  //Medallas de oro
   {
     image: 'TyrionLannister.png',
     title: 'Tyrion Lannister',
@@ -54,16 +56,16 @@ export const MEDALS: Medal[] = [
 
   // Medallas de plata
   {
-    image: '',
-    title: 'Por definir',
-    description: 'Pues eso coño que no se me ha ocurrido uno todavia, dejame en paz.',
+    image: 'Perforado.png',
+    title: 'Perforado',
+    description: 'Hacerte uno o varios piercings durante una villa, con los medios que sean.',
     type: 'silver',
     index: 0
   },
   {
-    image: 'Perforado.png',
-    title: 'Perforado',
-    description: 'Hacerte uno o varios piercings durante una villa, con los medios que sean.',
+    image: '',
+    title: 'Willy Fog',
+    description: 'Recorrer más de 750Km para poder asistir a una villa.',
     type: 'silver',
     index: 1
   },
@@ -75,16 +77,16 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
-    title: 'Willy Fog',
-    description: 'Recorrer más de 750Km para poder asistir a una villa.',
+    image: 'caganer.png',
+    title: 'El caganer',
+    description: 'Enhorabuena, te has cagado en medio del salón, cada uno con sus capacidades.',
     type: 'silver',
     index: 3
   },
   {
-    image: 'caganer.png',
-    title: 'El caganer',
-    description: 'Enhorabuena, te has cagado en medio del salón, cada uno con sus capacidades.',
+    image: 'Carapolla.png',
+    title: 'Carapolla',
+    description: 'Recibir un "mortadelo" de manera voluntaria y estando consciente.',
     type: 'silver',
     index: 4
   },
@@ -92,16 +94,16 @@ export const MEDALS: Medal[] = [
   // Medallas de bronce
 
   {
-    image: 'Carapolla.png',
-    title: 'Carapolla',
-    description: 'Recibir un "mortadelo" de manera voluntaria y estando consciente.',
+    image: 'Nude.png',
+    title: 'N-U-D-E',
+    description: 'Levantar unos cuantos UWUU!! por ponerte en pelotas.',
     type: 'bronze',
     index: 0
   },
   {
-    image: 'Nude.png',
-    title: 'N-U-D-E',
-    description: 'Levantar unos cuantos UWUU!! por ponerte en pelotas.',
+    image: '',
+    title: 'Mister World Wide',
+    description: 'Traer o hacer tu mismo de Dj durante una villa.',
     type: 'bronze',
     index: 1
   },
@@ -113,16 +115,16 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: '',
-    title: 'Mister World Wide',
-    description: 'Traer o hacer tu mismo de Dj durante una villa.',
+    image: 'RobinHood.png',
+    title: 'Robin Hood',
+    description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
     index: 3
   },
   {
-    image: 'RobinHood.png',
-    title: 'Robin Hood',
-    description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
+    image: '',
+    title: 'Billy el niño',
+    description: 'Tomar más de 5 chupitos al día durante una villa.',
     type: 'bronze',
     index: 4
   },
