@@ -8,6 +8,8 @@
 
 <div *ngIf="currentUser; else notLogged">
 
+  <!-- <app-tutorial *ngIf="tutorialService.mostrar"></app-tutorial> -->
+
   <app-popup-info *ngIf="popupService.mostrar"></app-popup-info>
   <app-popup-medals *ngIf="medalsPopupService.mostrar"></app-popup-medals>
   <app-popup-survey *ngIf="surveysPopupService.mostrar"></app-popup-survey>

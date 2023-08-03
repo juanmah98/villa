@@ -5,6 +5,7 @@ import { MedalsComponent } from './header/medals/medals.component';
 import { PopupInfoComponent } from './popup-info/popup-info.component';
 import { PopupMedalsComponent } from './popup-medals/popup-medals.component';
 import { PopupSurveyComponent } from './popup-survey/popup-survey.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 @NgModule({
   declarations: [
@@ -12,13 +13,15 @@ import { PopupSurveyComponent } from './popup-survey/popup-survey.component';
     MedalsComponent,
     PopupInfoComponent,
     PopupMedalsComponent,
-    PopupSurveyComponent
+    PopupSurveyComponent,
+    TutorialComponent
   ],
   exports: [
     HeaderComponent,
     PopupInfoComponent,
     PopupMedalsComponent,
-    PopupSurveyComponent
+    PopupSurveyComponent,
+    TutorialComponent
   ],
   imports: [
     CommonModule

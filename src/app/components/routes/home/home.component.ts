@@ -80,9 +80,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   onSpotyTouch() {
-    const enlacePerfilSpotifyWeb = "https://open.spotify.com/user/3132ezyyqsq76vsxm3jbgkphiefm?si=ajPdOnevTIuMAYEN8oaTcg"
-    const enlacePerfilSpotifyApp = "spotify:artist:4q3ewBCX7sLwd24euuV69X" //Este es el tipo de enlace que tendremos que usar para que le abra la cuenta de la villa en la app directamente
-    window.open(enlacePerfilSpotifyWeb, '_blank');
+    // const enlacePerfilSpotifyWeb = "https://open.spotify.com/user/3132ezyyqsq76vsxm3jbgkphiefm?si=ajPdOnevTIuMAYEN8oaTcg"
+    const enlacePerfilSpotifyApp = "spotify:user:3132ezyyqsq76vsxm3jbgkphiefm"
+    window.open(enlacePerfilSpotifyApp, '_blank');
   }
 
   onTricountTouch() {
