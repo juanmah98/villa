@@ -1,9 +1,10 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
 import { PopupService } from 'src/app/services/popup.service';
 import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { surveysPopupService } from 'src/app/services/surveys-popup.service';
+import { TutorialService } from 'src/app/services/tutorial.service';
 
 @Component({
   selector: 'app-home',
@@ -21,16 +22,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   laVillaLogoImg: SafeResourceUrl;
   buttonIconImg: SafeResourceUrl;
+  buttonTutorial: SafeResourceUrl;
 
   constructor(
     public popupService: PopupService,
     public medalsPopupService: MedalsPopupService,
     public surveysPopupService: surveysPopupService,
+    public tutorialService: TutorialService,
     private sanitizer: DomSanitizer) {
       const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
       this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
       const buttonIconImgUrl = "../../../../../assets/svg/ButtonIcon.svg";
       this.buttonIconImg = this.sanitizer.bypassSecurityTrustResourceUrl(buttonIconImgUrl);
+      const buttonTutorial = "../../../../../assets/Imagenes/Tutorial/Info.svg";
+      this.buttonTutorial = this.sanitizer.bypassSecurityTrustResourceUrl(buttonTutorial);
   }
 
   ngOnInit(): void {
@@ -63,6 +68,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   onHeaderTouch() {
     const scrollPosition = 0;
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  onTutorialTouch() {
+    this.tutorialService.actualizarMostrar(true)
+  }
+
+  onLogoTouch() {
+    const scrollPosition = 350;
 
     window.scrollTo({
       top: scrollPosition,

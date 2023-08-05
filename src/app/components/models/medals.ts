@@ -124,7 +124,7 @@ export const MEDALS: Medal[] = [
   {
     image: '',
     title: 'Billy el niño',
-    description: 'Tomar más de 5 chupitos al día durante una villa.',
+    description: 'Tomar más de 4 chupitos al día durante una villa.',
     type: 'bronze',
     index: 4
   },

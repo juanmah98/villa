@@ -1,7 +1,17 @@
+.tutorialContainer {
+  position: absolute;
+  z-index: 10;
+
+  top: 0;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .background {
   position: fixed;
-  z-index: 9;
-
+  z-index: -1;
   top: 0;
   width: 100vw;
   height: 101vh;
@@ -11,21 +21,164 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
-}
+  padding-bottom: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 
-.title {
-  font-family: "montserrat-bold";
-  font-size: 35px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  font-family: "montserrat-bold";
+  font-family: "montserrat";
   font-size: 10px;
   color: white;
+  text-transform: uppercase;
   text-align: center;
-  margin: 0 1rem;
+}
+
+.header {
+  font-family: 'montserrat-bold';
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+
+  position: fixed;
+  width: 320px;
+  margin-top: 2.4rem;
+  margin-left: 5rem;
+  padding: 2rem 4rem;
+  display: flex;
+
+  justify-content: flex-start;
+  text-align: center;
+
+  &__flecha {
+    scale: 40%;
+    transform: rotate(-36deg);
+
+    position: fixed;
+    width: 100vw;
+    margin-left: -5.5rem;
+    margin-top: 1.4rem;
+    padding: 0rem 4rem;
+  }
+}
+
+.verified {
+  position: fixed;
+  scale: 10%;
+  margin-left: 5.4rem;
+}
+
+.logrosContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 21rem;
+
+  &__text {
+    font-family: "montserrat-bold";
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding: 0rem 2rem;
+
+    margin-left: 1rem;
+    width: 220px;
+  }
+
+  &__arrow {
+    display: flex;
+    scale: 60%;
+    transform: rotate(135deg);
+    position: absolute;
+    margin-left: 8.2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10.7rem;
+
+  &__text {
+    font-family: "montserrat-bold";
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    text-align: right;
+
+    margin-left: 10rem;
+    padding: 0rem 2rem;
+    width: 220px;
+  }
+
+  &__arrow {
+    display: flex;
+    scale: 60%;
+    transform: rotate(-5deg);
+    position: absolute;
+    margin-left: 9rem;
+    margin-bottom: -6.8rem;
+  }
+}
+
+.lowerContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 21rem;
+
+  &__text {
+    font-family: "montserrat-bold";
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-left: 3rem;
+    padding: 0rem 2rem;
+    width: 242px;
+    text-transform: uppercase;
+  }
+
+  &__arrow1 {
+    display: flex;
+    scale: 60%;
+    position: absolute;
+    margin-left: 2rem;
+    margin-bottom: 7.2rem;
+  }
+  &__arrow2 {
+    display: flex;
+    scale: 60%;
+    position: absolute;
+    margin-left: 13rem;
+    margin-bottom: 1.2rem;
+  }
+  &__arrow3 {
+    display: flex;
+    scale: 60%;
+    position: absolute;
+    margin-left: 12rem;
+    margin-bottom: -5.8rem;
+  }
+  &__arrow4 {
+    display: flex;
+    scale: 60%;
+    position: absolute;
+    margin-left: 3.2rem;
+    margin-bottom: -13rem;
+  }
+}
+
+.fadeout {
+  animation: fadeout 0.1s;
+  opacity: 0%;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
 }

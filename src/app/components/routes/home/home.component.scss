@@ -48,6 +48,19 @@
   }
 }
 
+.tutorialContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  opacity: 50%;
+
+  &__button {
+    position: fixed;
+    scale: 15%;
+    margin-top: 2.3rem;
+  }
+}
+
 .containerLogo {
   display: flex;
   justify-content: center;

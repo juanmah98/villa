@@ -1,4 +1,52 @@
-<div class="background" (click)="onBackgroundTouched()">
-  <div class="title">Bienvenido</div>
-  <div class="subtitle">Esta es la ventana de tutorial</div>
+<div (click)="onBackgroundTouched()" class="tutorialContainer">
+  <div class="header">Si has organizado aquí te saldrá el verificado</div>
+  <img class="verified" [src]="verified">
+  <img class="header__flecha" [src]="flechaHeader">
+
+  <div class="logrosContainer" *ngIf="isLogrosVisible; else logrosNotVisible">
+    <div class="logrosContainer__text">Descubre tus logros obtenidos</div>
+    <img class="logrosContainer__arrow" [src]="flechaLogos">
+  </div>
+
+  <div class="infoContainer" *ngIf="isInfoVisible; else infoNotVisible">
+    <img class="infoContainer__arrow" [src]="flechaInfo">
+    <div class="infoContainer__text">Toda la información importante está aquí</div>
+  </div>
+
+  <div class="lowerContainer" *ngIf="isLowerVisible; else lowerNotVisible">
+    <img class="lowerContainer__arrow1" [src]="flechaDrive">
+    <img class="lowerContainer__arrow2" [src]="flechaSpoty">
+    <img class="lowerContainer__arrow3" [src]="flechaTricount">
+    <img class="lowerContainer__arrow4" [src]="flechaEncuestas">
+    <div class="lowerContainer__text">Accede a aplicaciones externas</div>
+  </div>
+
+  <div class="background">Pulsa en cualquier sitio para cerrar el tutorial</div>
 </div>
+
+<ng-template #logrosNotVisible>
+  <div class="fadeout">
+    <div class="logrosContainer">
+      <div class="logrosContainer__text">Descubre tus logros obtenidos</div>
+      <img class="logrosContainer__arrow" [src]="flechaLogos">
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #infoNotVisible>
+  <div class="fadeout">
+    <div class="infoContainer">
+      <img class="infoContainer__arrow" [src]="flechaInfo">
+      <div class="infoContainer__text">Toda la información importante está aquí</div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #lowerNotVisible>
+  <div class="fadeout">
+    <div class="infoContainer">
+      <img class="infoContainer__arrow" [src]="flechaInfo">
+      <div class="infoContainer__text">Toda la información importante está aquí</div>
+    </div>
+  </div>
+</ng-template>

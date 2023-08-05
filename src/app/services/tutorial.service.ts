@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TutorialService {
-  mostrar: boolean = true;
+  mostrar: boolean = false;
 
   actualizarMostrar(valor: boolean) {
     this.mostrar = valor;
