@@ -63,7 +63,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: '',
+    image: 'WillyFog.png',
     title: 'Willy Fog',
     description: 'Recorrer más de 750Km para poder asistir a una villa.',
     type: 'silver',
@@ -101,7 +101,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: '',
+    image: 'Dj.png',
     title: 'Mister World Wide',
     description: 'Traer o hacer tu mismo de Dj durante una villa.',
     type: 'bronze',
@@ -122,9 +122,9 @@ export const MEDALS: Medal[] = [
     index: 3
   },
   {
-    image: '',
+    image: 'Billy.png',
     title: 'Billy el niño',
-    description: 'Tomar al menos 6 chupitos al día durante una villa.',
+    description: 'Tomar al menos 4 chupitos al día durante una villa entera.',
     type: 'bronze',
     index: 4
   },
