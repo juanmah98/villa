@@ -1,9 +1,11 @@
-<div class="container">
-  <div (click)="onBackgroundTouched()" class="tutorialContainer">
-    <!-- <div class="header">Si has organizado aquí te saldrá el verificado</div>
+<div class="container" (click)="onBackgroundTouched()">
+  <div  class="tutorialContainer">
+    <div class="header">Si has organizado aquí te saldrá el verificado</div>
     <img class="verified" [src]="verified">
-    <img class="header__flecha" [src]="flechaHeader"> -->
+    <img class="header__flecha" [src]="flechaHeader">
+  </div>
 
+  <div class="movingContainers">
     <div class="logrosContainer" *ngIf="isLogrosVisible; else logrosNotVisible">
       <div class="logrosContainer__text">Descubre tus logros obtenidos</div>
       <img class="logrosContainer__arrow" [src]="flechaLogos">
@@ -21,9 +23,12 @@
       <img class="lowerContainer__arrow4" [src]="flechaEncuestas">
       <div class="lowerContainer__text">Accede a aplicaciones externas</div>
     </div>
+
+    <div class="background">
+      <div class="background__text">Pulsa en cualquier lado para cerrar esta venta</div>
+    </div>
   </div>
 
-  <div class="background"></div>
 </div>
 
 <ng-template #logrosNotVisible>
