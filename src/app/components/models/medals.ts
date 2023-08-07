@@ -26,7 +26,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: 'CinturonDeCampeon.png',
+    image: 'Cinturon.png',
     title: 'Cinturón de campeón',
     description: 'Hacer más de 2 tríos en una sola villa con personas diferentes.',
     type: 'gold',
@@ -108,8 +108,8 @@ export const MEDALS: Medal[] = [
     index: 1
   },
   {
-    image: '',
-    title: 'Eduardo manos tijeras',
+    image: 'Peluquero.png',
+    title: 'Refachero',
     description: 'Teñirte o raparte el pelo de manera interesante durante un día de la villa.',
     type: 'bronze',
     index: 2
@@ -131,32 +131,11 @@ export const MEDALS: Medal[] = [
 
   // Medallas de cobre
   {
-    image: 'Campeon.png',
-    title: 'Campeón, crack, tifón',
-    description: 'Ganar un torneo de beer pong durante una villa.',
-    type: 'copper',
-    index: 2
-  },
-  {
-    image: 'Barman.png',
-    title: 'Barman',
-    description: 'Traer o preparar alcohol típico de tu tierra para el disfrute de todos.',
-    type: 'copper',
-    index: 3
-  },
-  {
     image: 'TurboCiego.png',
     title: 'Turbo-Ciego',
     description: 'Hacer 2 o más turbolatas cada día de una villa.',
     type: 'copper',
     index: 0
-  },
-  {
-    image: 'ElPotas.png',
-    title: 'El Potas',
-    description: 'Acabar vomitando durante uno o más días en una villa.',
-    type: 'copper',
-    index: 4
   },
   {
     image: 'Nadamar.png',
@@ -165,4 +144,25 @@ export const MEDALS: Medal[] = [
     type: 'copper',
     index: 1
   },
+  {
+    image: 'BeerPongCup.png',
+    title: 'Campeón, crack, tifón',
+    description: 'Ganar un torneo de beer pong durante una villa.',
+    type: 'copper',
+    index: 2
+  },
+  {
+    image: 'BebidaTipica.png',
+    title: 'Barman',
+    description: 'Traer o preparar alcohol típico de tu tierra para el disfrute de todos.',
+    type: 'copper',
+    index: 3
+  },
+  {
+    image: 'ElPotas.png',
+    title: 'El Potas',
+    description: 'Acabar vomitando durante uno o más días en una villa.',
+    type: 'copper',
+    index: 4
+  }
 ];
