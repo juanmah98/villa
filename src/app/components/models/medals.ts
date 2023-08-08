@@ -115,8 +115,8 @@ export const MEDALS: Medal[] = [
     index: 2
   },
   {
-    image: 'RobinHood.png',
-    title: 'Robin Hood',
+    image: 'santa.png',
+    title: 'Papa Noel',
     description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
     index: 3
@@ -138,7 +138,7 @@ export const MEDALS: Medal[] = [
     index: 0
   },
   {
-    image: 'Nadamar.png',
+    image: 'Ramadan.png',
     title: 'nadamaR',
     description: 'Ramadán inverso, solo puedes beber de día, nada de comida hasta que caiga el sol.',
     type: 'copper',
