@@ -1,8 +1,12 @@
 <div class='header'>
   <div class="picture-container">
-    <img *ngIf="isVerified" class="header__verified" [src]="isVerifiedImg">
-    <div class="header__picture">
+    <img *ngIf="isVerified && !isAndreu" class="header__verified" [src]="isVerifiedImg">
+    <img *ngIf="isVerified && isAndreu" class="header__verified" [src]="isVerifiedAndreuImg">
+    <div *ngIf="!isAndreu" class="header__picture">
       <img src={{profilePicture}}>
+    </div>
+    <div *ngIf="isAndreu" class="header__pictureAndreu">
+      <img src={{profilePictureAndreu}}>
     </div>
   </div>
   <div class="header__main">

@@ -78,7 +78,7 @@
   margin-top: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   &__title {
     font-family: "montserrat-bold";
@@ -125,21 +125,33 @@
 .lower-section {
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 1rem;
 
   background-color: black;
-  height: 36rem;
+  height: 37rem;
+
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 
 .album {
+
+  &__titleContainer {
+    width: 100%;
+    max-width: 24.5rem;
+    padding: 0 2rem;
+  }
+
   &__title {
     font-family: "montserrat-bold";
     color: black;
-    text-align: left;
+    text-align: center;
     font-size: 25px;
 
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-left: 1rem;
-    width: 15rem;
+    width: 100%;
+    max-width: 24.5rem;
 
     border-radius: 5px;
     background-color: white;

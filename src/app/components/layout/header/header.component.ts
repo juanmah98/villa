@@ -12,8 +12,11 @@ export class HeaderComponent implements OnInit {
   type: string
   fullName: string
   isVerified: boolean;
+  isAndreu: boolean = false;
 
   isVerifiedImg = "../../../../../assets/svg/VerifiedIcon.svg";
+  isVerifiedAndreuImg = "../../../../../assets/svg/VerifiedIconAndreu.svg";
+  profilePictureAndreu = "../../../../../assets/Imagenes/Home/Andreu.jpg";
 
   private currentUser: User
 
@@ -26,6 +29,7 @@ export class HeaderComponent implements OnInit {
     this.profilePicture = this.currentUser.Picture
     this.type = this.currentUser.Type
     this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
-    this.isVerified = this.currentUser.HasManaged //Si quieres verlo cambia el valor en la base de datos o niega el valor de esta variable
+    this.isVerified = this.currentUser.HasManaged
+    this.isAndreu = this.currentUser.Email === 'javierandreudaza96@gmail.com'
   }
 }
