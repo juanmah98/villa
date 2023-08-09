@@ -8,6 +8,7 @@ export class User {
   HasManaged: boolean = false
   Medals: any[] = []
   id: string = ''
+  isAndreu: boolean = false
 
   public constructor(
     email?: string,
@@ -17,7 +18,8 @@ export class User {
     type?: string,
     hasManaged?: boolean,
     medals?: any[],
-    id?: string) {
+    id?: string,
+    isAndreu?: boolean) {
       this.Email = email
       this.Picture = picture
       this.Name = name
@@ -26,6 +28,7 @@ export class User {
       this.HasManaged = hasManaged
       this.Medals = medals
       this.id = id
+      this.isAndreu = isAndreu
     }
 
     setPicture(picture: string) {

@@ -26,7 +26,8 @@ export class DatabaseService {
               userContext.Type,
               userContext.HasManaged,
               userContext.Medals,
-              userContext.id
+              userContext.id,
+              userContext.isAndreu
             )
 
             user.setPicture(localStorage.getItem("profilePhoto"))
@@ -40,7 +41,7 @@ export class DatabaseService {
       return collectionData(userRef, { idField: 'id' }) as Observable<User[]>;
     }
 
-    addUser(clave: any){    
+    addUser(clave: any){
       const claveRef = collection(this.firestore, 'User');
       return addDoc(claveRef, clave);
     }

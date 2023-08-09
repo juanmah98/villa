@@ -30,6 +30,6 @@ export class HeaderComponent implements OnInit {
     this.type = this.currentUser.Type
     this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
     this.isVerified = this.currentUser.HasManaged
-    this.isAndreu = this.currentUser.Email === 'javierandreudaza96@gmail.com'
+    this.isAndreu = this.currentUser.isAndreu
   }
 }
