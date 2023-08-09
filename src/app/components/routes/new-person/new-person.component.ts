@@ -71,6 +71,7 @@ export class NewPersonComponent implements OnInit {
       Email: this.registerForm.value.Email,
       Type: this.registerForm.value.Type,
       HasManaged: this.registerForm.value.HasManaged,
+      isAndreu: this.registerForm.value.isAndreu,
 
       Medals: [{
         oro: [
