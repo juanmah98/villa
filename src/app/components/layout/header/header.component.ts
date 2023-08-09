@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
 
   isVerifiedImg = "../../../../../assets/svg/VerifiedIcon.svg";
   isVerifiedAndreuImg = "../../../../../assets/svg/VerifiedIconAndreu.svg";
-  profilePictureAndreu = "../../../../../assets/Imagenes/Home/Andreu.jpg";
+  profilePictureAndreu = "../../../../../assets/Imagenes/Home/Andreu.png";
 
   private currentUser: User
 
