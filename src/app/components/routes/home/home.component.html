@@ -22,7 +22,7 @@
   </div>
 
   <div appScrollPosition class="home">
-    <app-medals-collection></app-medals-collection>
+    <app-medals-collection *ngIf="!medalsVisible"></app-medals-collection>
 
     <div (click)="onLogoTouch()" class="containerLogo">
       <img class="containerLogo__logo" [src]="laVillaLogoImg">

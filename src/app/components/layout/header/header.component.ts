@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../models/user.model';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { FamilyService } from 'src/app/services/family.service';
 
 @Component({
   selector: 'app-header',
@@ -19,8 +20,9 @@ export class HeaderComponent implements OnInit {
   profilePictureAndreu = "../../../../../assets/Imagenes/Home/Andreu.png";
 
   private currentUser: User
+  private familyModeCount: number = 0
 
-  constructor() { }
+  constructor(public familyService: FamilyService) { }
 
   ngOnInit(): void {
     const storedUserString = localStorage.getItem("user");
@@ -31,5 +33,19 @@ export class HeaderComponent implements OnInit {
     this.fullName = this.currentUser.Name + ' ' + this.currentUser.LastName
     this.isVerified = this.currentUser.HasManaged
     this.isAndreu = this.currentUser.isAndreu
+  }
+
+  onPictureTouch() {
+    if(this.familyModeCount <= 3) {
+      this.familyModeCount += 1
+
+      console.log(this.familyModeCount)
+    } else {
+      this.familyService.setStatus(true)
+      console.log(this.familyModeCount)
+    }
+
+    setTimeout(() => { this.familyModeCount = 0 }, 2000)
+    console.log(this.familyModeCount)
   }
 }

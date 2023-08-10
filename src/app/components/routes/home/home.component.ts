@@ -5,6 +5,8 @@ import { MedalsPopupService } from 'src/app/services/medals-popup.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { surveysPopupService } from 'src/app/services/surveys-popup.service';
 import { TutorialService } from 'src/app/services/tutorial.service';
+import { FamilyService } from 'src/app/services/family.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +21,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   tricuount: string;
 
   isLowerThanX: boolean = true
+  medalsVisible: boolean;
 
   laVillaLogoImg: SafeResourceUrl;
   buttonIconImg: SafeResourceUrl;
@@ -29,6 +32,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     public medalsPopupService: MedalsPopupService,
     public surveysPopupService: surveysPopupService,
     public tutorialService: TutorialService,
+    public familyService: FamilyService,
     private sanitizer: DomSanitizer) {
       const logoImgUrl = "../../../../../assets/svg/LogoIcon.svg";
       this.laVillaLogoImg = this.sanitizer.bypassSecurityTrustResourceUrl(logoImgUrl);
@@ -50,6 +54,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.encuesta = "¿Dónde cenamos? ¿Qué día nos disfrazamos? ¿Cuál es la temática de este año? ¿Alguna sugerencia?"
 
     this.isLowerThan(5000);
+
+    this.familyService.statusObservable.subscribe(newStatus => {
+      this.medalsVisible = newStatus;
+    })
   }
 
   ngAfterViewInit() {
