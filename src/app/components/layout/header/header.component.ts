@@ -38,14 +38,9 @@ export class HeaderComponent implements OnInit {
   onPictureTouch() {
     if(this.familyModeCount <= 3) {
       this.familyModeCount += 1
-
-      console.log(this.familyModeCount)
     } else {
       this.familyService.setStatus(true)
-      console.log(this.familyModeCount)
     }
-
     setTimeout(() => { this.familyModeCount = 0 }, 2000)
-    console.log(this.familyModeCount)
   }
 }

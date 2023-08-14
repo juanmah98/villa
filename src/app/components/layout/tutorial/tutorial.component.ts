@@ -19,6 +19,7 @@ export class TutorialComponent {
   flechaSpoty: SafeResourceUrl;
   flechaTricount: SafeResourceUrl;
   flechaEncuestas: SafeResourceUrl;
+  flechaInsta: SafeResourceUrl;
   verified: SafeResourceUrl;
 
   constructor(
@@ -39,14 +40,14 @@ export class TutorialComponent {
       this.flechaTricount = this.sanitizer.bypassSecurityTrustResourceUrl(flechaTricountUrl);
       const flechaEncuestasUrl = "../../../../assets/Imagenes/Tutorial/Flecha7.svg";
       this.flechaEncuestas = this.sanitizer.bypassSecurityTrustResourceUrl(flechaEncuestasUrl);
+      const flechaInstaUrl = "../../../../assets/Imagenes/Tutorial/Flecha8.svg";
+      this.flechaInsta = this.sanitizer.bypassSecurityTrustResourceUrl(flechaInstaUrl);
       const verifiedUrl = "../../../../assets/svg/VerifiedIcon.svg";
       this.verified = this.sanitizer.bypassSecurityTrustResourceUrl(verifiedUrl);
     }
 
   onBackgroundTouched() {
     this.tutorialService.actualizarMostrar(false)
-
-    console.log()
   }
 
     // Temporal para poder obtener las posiciones del scroll
@@ -55,7 +56,6 @@ export class TutorialComponent {
       const scrollPosition = this.el.nativeElement.scrollTop || window.scrollY;
       this.isLogrosVisible = scrollPosition < 200
       this.isInfoVisible = scrollPosition < 445
-      console.log('Scroll:', scrollPosition);
+      // console.log('Scroll:', scrollPosition);
     }
-
 }

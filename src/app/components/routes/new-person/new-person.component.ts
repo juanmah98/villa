@@ -59,7 +59,6 @@ export class NewPersonComponent implements OnInit {
     this.currentUser = JSON.parse(storedUserString);
 
     if (this.currentUser && this.currentUser.Email === 'jagondia96@gmail.com') this.isAllowed = true;
-    console.log(this.isAllowed)
   }
 
   async onSumbit() {
