@@ -54,6 +54,7 @@
     min-height: 30px;
     overflow: hidden;
     margin: 0.4rem;
+    filter: drop-shadow(0px 0px 2px grey);
   }
 
   &__medalNotOK {
@@ -64,6 +65,6 @@
     min-height: 30px;
     overflow: hidden;
     margin: 0.4rem;
-    filter: brightness(0.35);
+    filter: opacity(0.3) saturate(0.5) blur(0.35px) brightness(0.7);
   }
 }
