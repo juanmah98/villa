@@ -23,6 +23,7 @@ export class NewPersonComponent implements OnInit {
         Email: [""],
         Type: [""],
         HasManaged: [false],
+        isAndreu: [false],
 
         medalsOro1: [false],
         medalsOro2: [false],
