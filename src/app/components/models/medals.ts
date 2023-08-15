@@ -92,7 +92,6 @@ export const MEDALS: Medal[] = [
   },
 
   // Medallas de bronce
-
   {
     image: 'Nude.png',
     title: 'N-U-D-E',
@@ -117,7 +116,7 @@ export const MEDALS: Medal[] = [
   {
     image: 'santa.png',
     title: 'Papa Noel',
-    description: 'Hacer o preparar alguna sorpresa de manera desinteresada para el resto de personas.',
+    description: 'Preparar alguna sorpresa de manera desinteresada para el resto de personas.',
     type: 'bronze',
     index: 3
   },

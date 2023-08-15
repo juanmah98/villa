@@ -30,12 +30,14 @@ export class MedalsPopupService {
       this.actualDescription = medal.description
 
     } else {
-      let medalImg = MEDALS.find((medal) => medal.index == index && medal.type === type).image
+      let realMedalInfo = MEDALS.find((medal) => medal.index == index && medal.type === type)
+
+      let medalImg = realMedalInfo.image
       let medal = MEDALS.find((medal) => medal.type === 'unknown')
 
       this.actualImage = medalImg
-      this.actualTitle = medal.title
-      this.actualDescription = medal.description
+      this.actualTitle = realMedalInfo.title
+      this.actualDescription = realMedalInfo.description
       this.actualType = medal.type
     }
   }
