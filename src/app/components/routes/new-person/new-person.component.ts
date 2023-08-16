@@ -49,8 +49,7 @@ export class NewPersonComponent implements OnInit {
         medalsCobre4: [false],
         medalsCobre5: [false],
 
-      },
-
+      }
     )
 
   }
