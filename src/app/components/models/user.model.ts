@@ -36,11 +36,22 @@ export class User {
     }
 }
 
-export enum Usertype {
-  infiltrado = "¿Quien pollas eres?",
+export enum UserType {
   invitado = "Invitado",
+  invitada = "Invitada",
+  invitade = "Invitade",
+  piopio = "Pio pio",
+
   novato = "Novato",
+  novata = "Novata",
+  novate = "Novate",
+
   veterano = "Veterano",
+  veterana = "Veterana",
+  veterane = "Veterane",
+
   leyenda = "Leyenda",
-  fundador = "Fundador"
+
+  fundador = "Fundador",
+  fundadora = "Fundadora"
 }
