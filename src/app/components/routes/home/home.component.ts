@@ -114,7 +114,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   onInstaTouch() {
-    const enlacePerfilInstagramApp = "https://www.instagram.com/cristiano/"
+    const enlacePerfilInstagramApp = "https://instagram.com/la_villa_oficial?igshid=NTc4MTIwNjQ2YQ=="
     window.open(enlacePerfilInstagramApp, '_blank');
   }
 
