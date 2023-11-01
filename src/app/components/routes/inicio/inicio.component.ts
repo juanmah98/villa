@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuariosApiService } from 'src/app/services/usuarios-api.service';
 declare var google: any;
 
 @Component({
@@ -7,11 +8,20 @@ declare var google: any;
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
-  googleUser: any
+  googleUser: any;
+  usuarios: any[] = [];
 
-  constructor() { }
+  constructor(private usuariosApi: UsuariosApiService) { }
 
   async ngOnInit(): Promise<void> {
+    
+    /* GET API */
+    this.usuariosApi.getUsers().subscribe((data: any) => {
+      this.usuarios = data;
+      console.log(data);
+    });
+
+    
     setTimeout(() => {
       google.accounts.id.initialize({
         client_id: '112109968528-8s98plf90uargeq2t4imemec1ilap2j9.apps.googleusercontent.com',

@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewPersonComponent } from './components/routes/new-person/new-person.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NewPersonComponent } from './components/routes/new-person/new-person.co
     FormsModule,
     LayoutModule,
     RoutesModule,
+    HttpClientModule,
     ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
